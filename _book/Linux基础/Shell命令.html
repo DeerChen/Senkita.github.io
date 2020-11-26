@@ -1,0 +1,500 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Shell命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Linux常用软件.html" />
+    
+    
+    <link rel="prev" href="Linux目录.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    全栈养成计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../推荐书目.html">
+            
+                <a href="../推荐书目.html">
+            
+                    
+                    推荐书目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Linux基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Linux目录.html">
+            
+                <a href="Linux目录.html">
+            
+                    
+                    Linux目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="Shell命令.html">
+            
+                <a href="Shell命令.html">
+            
+                    
+                    Shell命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Linux常用软件.html">
+            
+                <a href="Linux常用软件.html">
+            
+                    
+                    Linux常用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Linux常用配置.html">
+            
+                <a href="Linux常用配置.html">
+            
+                    
+                    Linux常用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Shell命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="shell&#x547D;&#x4EE4;">Shell&#x547D;&#x4EE4;</h1>
+<h2 id="&#x5E2E;&#x52A9;">&#x5E2E;&#x52A9;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</span>
+man ls <span class="hljs-comment">#manual</span>
+<span class="hljs-built_in">help</span> ls
+</code></pre>
+<h2 id="&#x6587;&#x4EF6;&#x5904;&#x7406;">&#x6587;&#x4EF6;&#x5904;&#x7406;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># change directory&#x5207;&#x6362;&#x76EE;&#x5F55;</span>
+<span class="hljs-built_in">cd</span> . <span class="hljs-comment"># .&#x662F;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#xFF0C;..&#x662F;&#x7236;&#x7EA7;&#x76EE;&#x5F55;&#xFF0C;~&#x662F;&#x4E3B;&#x76EE;&#x5F55;</span>
+
+<span class="hljs-comment"># list&#x5217;&#x51FA;</span>
+ls <span class="hljs-_">-l</span> <span class="hljs-_">-a</span> -h <span class="hljs-comment"># -l&#x662F;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x5C55;&#x793A;&#xFF0C;-a&#x662F;&#x5305;&#x542B;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF0C;-h&#x662F;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x5355;&#x4F4D;</span>
+
+<span class="hljs-comment"># print working directory&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x76EE;&#x5F55;</span>
+<span class="hljs-built_in">pwd</span>
+
+<span class="hljs-comment"># make directory&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x5939;</span>
+mkdir -p newDir <span class="hljs-comment"># -p&#x662F;&#x5982;&#x679C;&#x7236;&#x76EE;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4E00;&#x5E76;&#x751F;&#x6210;</span>
+<span class="hljs-comment"># &#x65B0;&#x5EFA;&#x76EE;&#x5F55;</span>
+touch README.md
+
+<span class="hljs-comment"># &#x5199;&#x5165;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;&apos;</span> &gt;&gt; README.md <span class="hljs-comment"># &gt;&#x662F;&#x8986;&#x76D6;&#x5199;&#x5165;&#xFF0C;&gt;&gt;&#x662F;&#x8FFD;&#x52A0;</span>
+
+<span class="hljs-comment"># copy&#x590D;&#x5236;</span>
+cp -r -p dir1/ dir2/ <span class="hljs-comment"># -r&#x662F;&#x7528;&#x4E8E;&#x76EE;&#x5F55;&#x7684;&#x9012;&#x5F52;&#x590D;&#x5236;&#xFF0C;-p&#x662F;&#x4FDD;&#x7559;&#x539F;&#x6587;&#x4EF6;&#x5C5E;&#x6027;</span>
+<span class="hljs-comment"># move&#x79FB;&#x52A8;</span>
+mv oldFile newFile
+<span class="hljs-comment"># remove&#x5220;&#x9664;</span>
+rm -rf dir/ <span class="hljs-comment"># -r&#x662F;&#x7528;&#x4E8E;&#x76EE;&#x5F55;&#x7684;&#x9012;&#x5F52;&#x5220;&#x9664;(recursive)&#xFF0C;-f&#x662F;&#x5F3A;&#x5236;&#x5220;&#x9664;(force)</span>
+
+<span class="hljs-comment"># link&#x521B;&#x5EFA;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;</span>
+ln <span class="hljs-_">-s</span> file1 link1 <span class="hljs-comment"># -s&#x662F;&#x521B;&#x5EFA;&#x8F6F;&#x94FE;&#x63A5;</span>
+</code></pre>
+<h2 id="&#x67E5;&#x770B;">&#x67E5;&#x770B;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># concatenate&#x663E;&#x793A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</span>
+cat README.md
+
+<span class="hljs-comment"># &#x5206;&#x9875;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</span>
+more README.md <span class="hljs-comment"># &#x7A7A;&#x683C;&#x663E;&#x793A;&#x4E0B;&#x4E00;&#x9875;&#xFF0C;&#x56DE;&#x8F66;&#x663E;&#x793A;&#x4E0B;&#x4E00;&#x884C;&#xFF0C;q&#x9000;&#x51FA;</span>
+
+<span class="hljs-comment"># &#x663E;&#x793A;&#x5934;&#x51E0;&#x884C;</span>
+head -n 5 README.md <span class="hljs-comment"># -n&#x662F;&#x6307;&#x5B9A;&#x884C;&#x6570;</span>
+<span class="hljs-comment"># &#x663E;&#x793A;&#x540E;&#x51E0;&#x884C;</span>
+tail -n 20 README.md <span class="hljs-comment"># -n&#x662F;&#x6307;&#x5B9A;&#x884C;&#x6570;</span>
+</code></pre>
+<h2 id="&#x67E5;&#x627E;">&#x67E5;&#x627E;</h2>
+<pre><code class="lang-bash">find dir/ -name <span class="hljs-string">&quot;demo&quot;</span> -size -204800  <span class="hljs-comment"># -name&#x662F;&#x7CBE;&#x786E;&#x6309;&#x540D;&#x67E5;&#x627E;&#xFF0C;-size&#x662F;&#x6309;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;&#xFF0C;+&#x662F;&#x5927;&#x4E8E;&#xFF0C;-&#x662F;&#x5C0F;&#x4E8E;&#xFF0C;&#x4E0D;&#x5199;&#x662F;&#x7B49;&#x4E8E;&#xFF0C;&#x4EE5;block&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;1K=2block</span>
+find dir/ -iname <span class="hljs-string">&quot;demo?&quot;</span> -type f <span class="hljs-comment"># -iname&#x662F;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x6309;&#x540D;&#x67E5;&#x627E;&#xFF0C;*&#x662F;&#x5339;&#x914D;&#x6240;&#x6709;&#xFF0C;?&#x662F;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#xFF0C;-type&#x662F;&#x6309;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;&#xFF0C;f&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF0C;l&#x662F;&#x8F6F;&#x94FE;&#x63A5;&#x6587;&#x4EF6;&#xFF0C;d&#x662F;&#x76EE;&#x5F55;&#xFF0C;c&#x662F;&#x5B57;&#x7B26;&#x6587;&#x4EF6;</span>
+
+grep -v demo -i -n -c file1 <span class="hljs-comment"># -v&#x662F;&#x53CD;&#x9009;&#xFF0C;-i&#x662F;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#xFF0C;-n&#x662F;&#x663E;&#x793A;&#x5339;&#x914D;&#x884C;&#x548C;&#x884C;&#x53F7;&#xFF0C;-c&#x662F;&#x8F93;&#x51FA;&#x5339;&#x914D;&#x884C;&#x6B21;&#x6570;</span>
+
+<span class="hljs-built_in">which</span> ls <span class="hljs-comment"># &#x663E;&#x793A;&#x547D;&#x4EE4;&#x6240;&#x5728;&#x76EE;&#x5F55;</span>
+whereis ls <span class="hljs-comment"># &#x663E;&#x793A;&#x547D;&#x4EE4;&#x53CA;&#x5176;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#x7684;&#x6240;&#x5728;&#x76EE;&#x5F55;</span>
+</code></pre>
+<h2 id="&#x78C1;&#x76D8;&#x64CD;&#x4F5C;">&#x78C1;&#x76D8;&#x64CD;&#x4F5C;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x663E;&#x793A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;</span>
+df -h -m <span class="hljs-_">-a</span> <span class="hljs-comment"># -h&#x662F;(human-readable)&#x4EE5;&#x6613;&#x8BFB;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#xFF0C;-m&#x662F;&#x4EE5;MB&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;-a&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x5206;&#x533A;</span>
+
+<span class="hljs-comment"># &#x53EA;&#x663E;&#x793A;&#x5360;&#x6709;&#x7A7A;&#x95F4;</span>
+du -h <span class="hljs-_">-a</span> <span class="hljs-_">-s</span> /home <span class="hljs-comment"># -h&#x662F;(human-readable)&#x4EE5;&#x6613;&#x8BFB;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#xFF0C;-a&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x5206;&#x533A;&#xFF0C;-s&#x662F;(summarize)&#x7EDF;&#x8BA1;&#x603B;&#x5360;&#x6709;&#x91CF;</span>
+
+<span class="hljs-comment"># &#x663E;&#x793A;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x7387;</span>
+free -g <span class="hljs-comment"># -g&#x662F;&#x4EE5;GB&#x4E3A;&#x5355;&#x4F4D;</span>
+</code></pre>
+<h2 id="&#x538B;&#x7F29;">&#x538B;&#x7F29;</h2>
+<pre><code class="lang-bash">tar -zcvf dir1.tar.gz dir/ <span class="hljs-comment"># -c&#x662F;&#x538B;&#x7F29;&#x6210;tar&#x683C;&#x5F0F;&#xFF0C;-z&#x662F;&#x538B;&#x7F29;&#x6210;gzip&#x683C;&#x5F0F;(&#x4E0D;&#x652F;&#x6301;&#x538B;&#x7F29;&#x76EE;&#x5F55;)&#xFF0C;-v&#x662F;&#x663E;&#x793A;&#x8FC7;&#x7A0B;&#xFF0C;-f&#x662F;&#x6307;&#x5B9A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x540D;(&#x5FC5;&#x987B;&#x6709;&#x4E14;&#x5FC5;&#x987B;&#x653E;&#x6700;&#x540E;)</span>
+tar -C /opt -xjf dir1.tar.bz2 <span class="hljs-comment"># -C&#x662F;&#x89E3;&#x538B;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#xFF0C;-x&#x662F;&#x89E3;&#x538B;tar&#x683C;&#x5F0F;&#xFF0C;-j&#x662F;&#x89E3;&#x538B;bzip2&#x683C;&#x5F0F;</span>
+</code></pre>
+<h2 id="&#x7CFB;&#x7EDF;">&#x7CFB;&#x7EDF;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</span>
+data
+
+<span class="hljs-comment"># &#x5173;&#x673A;</span>
+shutdown -c -h 21:30 -r <span class="hljs-comment"># -c&#x662F;&#x53D6;&#x6D88;&#x4E0A;&#x4E00;&#x4E2A;&#x5173;&#x673A;&#x547D;&#x4EE4;&#xFF0C;-h&#x662F;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#xFF0C;-r&#x662F;&#x91CD;&#x542F;</span>
+<span class="hljs-comment"># &#x91CD;&#x542F;</span>
+reboot
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x4FE1;&#x606F;</span>
+uname -r
+</code></pre>
+<h2 id="&#x7F51;&#x7EDC;">&#x7F51;&#x7EDC;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x6D4B;&#x8BD5;&#x7F51;&#x7EDC;&#x8FDE;&#x901A;&#x6027;</span>
+ping baidu.com <span class="hljs-comment"># ping&#x4F7F;&#x7528;ICMP&#x534F;&#x8BAE;&#xFF0C;&#x4E0D;&#x5360;&#x7528;&#x7AEF;&#x53E3;</span>
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;</span>
+ip addr
+<span class="hljs-comment"># interface configure</span>
+<span class="hljs-comment"># &#x9700;&#x8981;&#x88C5;net-tools</span>
+ifconfig <span class="hljs-_">-a</span> <span class="hljs-comment"># -a&#x662F;&#x67E5;&#x770B;&#x6240;&#x6709;&#x7F51;&#x5361;</span>
+
+<span class="hljs-comment"># network statistics&#x68C0;&#x6D4B;&#x4E3B;&#x673A;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</span>
+netstat -antup <span class="hljs-comment"># -a&#x662F;&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDE;&#x63A5;&#x548C;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;-n&#x662F;&#x4EE5;&#x6570;&#x5B57;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;-t&#x662F;&#x663E;&#x793A;tcp&#x534F;&#x8BAE;&#x76F8;&#x5173;&#xFF0C;-u&#x662F;&#x663E;&#x793A;udp&#x534F;&#x8BAE;&#x76F8;&#x5173;&#xFF0C;-p&#x662F;&#x663E;&#x793A;socket&#x7684;PID&#x548C;&#x8FDB;&#x7A0B;&#x540D;</span>
+</code></pre>
+<h2 id="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;">&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;">&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">&#x8FDB;&#x7A0B;</th>
+<th style="text-align:center">&#x7EBF;&#x7A0B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x5B9A;&#x4E49;</td>
+<td style="text-align:center">&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;</td>
+<td style="text-align:center">&#x8F7B;&#x91CF;&#x7EA7;&#x8FDB;&#x7A0B;&#xFF0C;&#x7531;&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5730;&#x5740;&#x7A7A;&#x95F4;</td>
+<td style="text-align:center">&#x6709;&#x72EC;&#x7ACB;&#x5730;&#x5740;&#x7A7A;&#x95F4;</td>
+<td style="text-align:center">&#x6CA1;&#x72EC;&#x7ACB;&#x5730;&#x5740;&#x7A7A;&#x95F4;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x8D44;&#x6E90;&#x6D88;&#x8017;</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CPU&#x548C;&#x5185;&#x5B58;&#x8017;&#x8D39;&#x5C0F;&#x4E8E;&#x8FDB;&#x7A0B;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-bash">./install.sh &amp; <span class="hljs-comment"># &amp;&#x662F;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x6807;&#x8BC6;&#xFF0C;&#x4F46;&#x4EC5;&#x652F;&#x6301;&#x975E;&#x4EA4;&#x4E92;&#x5F0F;&#x547D;&#x4EE4;</span>
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;</span>
+ps aux <span class="hljs-comment"># a&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#xFF0C;u&#x662F;&#x663E;&#x793A;&#x7528;&#x6237;&#x540D;&#x548C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF0C;x&#x662F;&#x663E;&#x793A;&#x6CA1;&#x6709;&#x7EC8;&#x7AEF;&#x7684;&#x8FDB;&#x7A0B;</span>
+ps -le <span class="hljs-comment"># -l&#x662F;&#x957F;&#x683C;&#x5F0F;&#x663E;&#x793A;&#xFF0C;-e&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x8FDB;&#x7A0B;</span>
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x5065;&#x5EB7;&#x72B6;&#x6001;</span>
+top <span class="hljs-_">-d</span> 5 <span class="hljs-comment"># -d&#x662F;&#x5237;&#x65B0;&#x79D2;&#x6570;</span>
+
+<span class="hljs-comment"># &#x5173;&#x95ED;&#x8FDB;&#x7A0B;</span>
+<span class="hljs-built_in">kill</span> -9 1024 <span class="hljs-comment"># -9&#x662F;&#x5F3A;&#x5236;&#x5173;&#x95ED;</span>
+<span class="hljs-built_in">kill</span> -1 1024 <span class="hljs-comment"># -1&#x662F;&#x91CD;&#x542F;</span>
+killall <span class="hljs-_">-l</span> <span class="hljs-comment"># &#x5173;&#x95ED;&#x6240;&#x6709;</span>
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
+w root
+
+<span class="hljs-comment"># &#x6302;&#x8D77;&#xFF0C;&#x5373;&#x4F7F;&#x7528;&#x6237;&#x9000;&#x51FA;&#x767B;&#x9646;&#x4F9D;&#x65E7;&#x7EE7;&#x7EED;&#x6267;&#x884C;</span>
+nohup ping baidu.com &amp;
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x8D1F;&#x8F7D;</span>
+uptime
+</code></pre>
+<h2 id="&#x6743;&#x9650;&#x7BA1;&#x7406;">&#x6743;&#x9650;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x7528;&#x6237;&#x6743;&#x9650;">&#x7528;&#x6237;&#x6743;&#x9650;</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7528;&#x6237;</span>
+whoami
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x6240;&#x6709;&#x7528;&#x6237;</span>
+cat /etc/passwd
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7EC4;</span>
+groups
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x6240;&#x6709;&#x7EC4;</span>
+cat /etc/group
+
+<span class="hljs-comment"># &#x9000;&#x51FA;&#x7528;&#x6237;</span>
+<span class="hljs-built_in">exit</span> root
+<span class="hljs-comment"># &#x5207;&#x6362;&#x7528;&#x6237;</span>
+su root
+<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x7528;&#x6237;</span>
+useradd demo
+<span class="hljs-comment"># &#x4FEE;&#x6539;&#x5BC6;&#x7801;</span>
+passwd demo
+<span class="hljs-comment"># &#x5220;&#x9664;&#x7528;&#x6237;</span>
+userdel -r demo <span class="hljs-comment"># -r&#x662F;&#x5220;&#x9664;&#x7528;&#x6237;&#x540C;&#x65F6;&#x5220;&#x9664;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;</span>
+
+<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x7EC4;</span>
+groupadd -g 1024 demo
+<span class="hljs-comment"># &#x4FEE;&#x6539;&#x7EC4;&#x540D;</span>
+groupmod -n newGroup oldGroup
+<span class="hljs-comment"># &#x5220;&#x9664;&#x7EC4;</span>
+groupdel -g 1024
+</code></pre>
+<h3 id="&#x6587;&#x4EF6;&#x6743;&#x9650;">&#x6587;&#x4EF6;&#x6743;&#x9650;</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x7B2C;1&#x4F4D;&#x662F;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;d&#x662F;&#x76EE;&#x5F55;&#xFF0C;-&#x662F;&#x666E;&#x901A;&#x6587;&#x4EF6;&#xFF0C;l&#x662F;&#x94FE;&#x63A5;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment"># &#x7B2C;2-4&#x4F4D;&#x662F;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x6743;&#x9650;&#xFF0C;&#x7B2C;2-4&#x4F4D;&#x662F;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x7EC4;&#x6743;&#x9650;&#xFF0C;&#x7B2C;2-4&#x4F4D;&#x662F;&#x5176;&#x5B83;&#x7528;&#x6237;&#x6743;&#x9650;</span>
+<span class="hljs-comment"># r&#x662F;(read)&#x8BFB;&#xFF0C;w&#x662F;(write)&#x5199;&#xFF0C;x&#x662F;(execute)&#x6267;&#x884C;</span>
+-rwxr--r-x
+
+<span class="hljs-comment"># change mode&#x4FEE;&#x6539;&#x6743;&#x9650;</span>
+chmod -R 777 README.md <span class="hljs-comment"># -R&#x662F;&#x9012;&#x5F52;&#x4FEE;&#x6539;&#xFF0C;r=4&#xFF0C;w=2&#xFF0C;x=1</span>
+<span class="hljs-comment"># change file ownership&#x4FEE;&#x6539;&#x6240;&#x6709;&#x8005;</span>
+chown -R root:root README.md <span class="hljs-comment"># -R&#x662F;&#x9012;&#x5F52;&#x4FEE;&#x6539;</span>
+<span class="hljs-comment"># change file group ownership&#x4FEE;&#x6539;&#x6240;&#x5C5E;&#x7EC4;</span>
+chgrp root README.md
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Linux目录.html" class="navigation navigation-prev " aria-label="Previous page: Linux目录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Linux常用软件.html" class="navigation navigation-next " aria-label="Next page: Linux常用软件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Shell命令","level":"1.3.2","depth":2,"next":{"title":"Linux常用软件","level":"1.3.3","depth":2,"path":"Linux基础/Linux常用软件.md","ref":"Linux基础/Linux常用软件.md","articles":[]},"previous":{"title":"Linux目录","level":"1.3.1","depth":2,"path":"Linux基础/Linux目录.md","ref":"Linux基础/Linux目录.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Shell命令.md","mtime":"2020-11-26T15:00:30.679Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-26T16:06:35.295Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
