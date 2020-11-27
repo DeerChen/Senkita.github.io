@@ -153,7 +153,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="Linux常用软件.html">
+        <li class="chapter " data-level="1.3.3" data-path="Linux用户权限.html">
+            
+                <a href="Linux用户权限.html">
+            
+                    
+                    Linux用户权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Linux常用软件.html">
             
                 <a href="Linux常用软件.html">
             
@@ -166,7 +179,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.4" data-path="Linux常用配置.html">
+        <li class="chapter active" data-level="1.3.5" data-path="Linux常用配置.html">
             
                 <a href="Linux常用配置.html">
             
@@ -232,16 +245,54 @@
                                 <h1 id="linux&#x5E38;&#x7528;&#x914D;&#x7F6E;">Linux&#x5E38;&#x7528;&#x914D;&#x7F6E;</h1>
 <h2 id="sudo">Sudo</h2>
 <pre><code class="lang-bash">sudo vi /etc/sudoers
-
-root ALL=(ALL) ALL
+</code></pre>
+<pre><code class="lang-ini"># &#x6388;&#x6743;&#x7528;&#x6237; &#x4E3B;&#x673A;=(&#x5207;&#x6362;&#x5230;:&#x662F;&#x5426;&#x9700;&#x8981;&#x5BC6;&#x7801;) &#x53EF;&#x7528;&#x547D;&#x4EE4;
+# &#x62EC;&#x53F7;&#x5185;&#x5BB9;&#x53EF;&#x7701;&#x7565;
+root ALL=(ALL:NOPASSWD) ALL
 </code></pre>
 <h2 id="&#x6539;&#x6E90;">&#x6539;&#x6E90;</h2>
 <pre><code class="lang-bash">sudo vi /etc/apt/sources.list
-
-<span class="hljs-comment"># &#x6539;&#x4E3A;&#x7F51;&#x6613;&#x6E90;</span>
+</code></pre>
+<h3 id="debian">Debian</h3>
+<pre><code class="lang-ini"># &#x6539;&#x4E3A;&#x7F51;&#x6613;&#x6E90;
 deb http://mirrors.163.com/debian/ buster main
 deb http://mirrors.163.com/debian/ buster-updates main
 deb http://mirrors.163.com/debian-security/ buster/updates main
+</code></pre>
+<h3 id="ubuntu">Ubuntu</h3>
+<pre><code class="lang-ini"># 163&#x6E90;
+deb http://mirrors.163.com/ubuntu/ Groovy main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ Groovy-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ Groovy-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ Groovy-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ Groovy-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ Groovy main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ Groovy-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ Groovy-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ Groovy-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ Groovy-backports main restricted universe multiverse
+# &#x963F;&#x91CC;&#x4E91;&#x6E90;
+deb http://mirrors.aliyun.com/ubuntu/ Groovy main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ Groovy-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ Groovy-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ Groovy-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ Groovy-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ Groovy main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ Groovy-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ Groovy-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ Groovy-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ Groovy-backports main restricted universe multiverse
+# &#x6E05;&#x534E;&#x6E90;
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-security main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-proposed main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-proposed main restricted universe multiverse
 </code></pre>
 
                                 
@@ -282,7 +333,7 @@ deb http://mirrors.163.com/debian-security/ buster/updates main
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux常用配置","level":"1.3.4","depth":2,"previous":{"title":"Linux常用软件","level":"1.3.3","depth":2,"path":"Linux基础/Linux常用软件.md","ref":"Linux基础/Linux常用软件.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Linux常用配置.md","mtime":"2020-11-26T15:18:17.878Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-26T16:06:35.295Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux常用配置","level":"1.3.5","depth":2,"previous":{"title":"Linux常用软件","level":"1.3.4","depth":2,"path":"Linux基础/Linux常用软件.md","ref":"Linux基础/Linux常用软件.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Linux常用配置.md","mtime":"2020-11-26T23:57:48.671Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T01:02:59.635Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

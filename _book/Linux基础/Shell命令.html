@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Linux常用软件.html" />
+    <link rel="next" href="Linux用户权限.html" />
     
     
     <link rel="prev" href="Linux目录.html" />
@@ -155,7 +155,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="Linux常用软件.html">
+        <li class="chapter " data-level="1.3.3" data-path="Linux用户权限.html">
+            
+                <a href="Linux用户权限.html">
+            
+                    
+                    Linux用户权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Linux常用软件.html">
             
                 <a href="Linux常用软件.html">
             
@@ -168,7 +181,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="Linux常用配置.html">
+        <li class="chapter " data-level="1.3.5" data-path="Linux常用配置.html">
             
                 <a href="Linux常用配置.html">
             
@@ -234,7 +247,7 @@
                                 <h1 id="shell&#x547D;&#x4EE4;">Shell&#x547D;&#x4EE4;</h1>
 <h2 id="&#x5E2E;&#x52A9;">&#x5E2E;&#x52A9;</h2>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</span>
-man ls <span class="hljs-comment">#manual</span>
+man ls <span class="hljs-comment"># manual</span>
 <span class="hljs-built_in">help</span> ls
 </code></pre>
 <h2 id="&#x6587;&#x4EF6;&#x5904;&#x7406;">&#x6587;&#x4EF6;&#x5904;&#x7406;</h2>
@@ -296,9 +309,12 @@ du -h <span class="hljs-_">-a</span> <span class="hljs-_">-s</span> /home <span 
 <span class="hljs-comment"># &#x663E;&#x793A;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x7387;</span>
 free -g <span class="hljs-comment"># -g&#x662F;&#x4EE5;GB&#x4E3A;&#x5355;&#x4F4D;</span>
 </code></pre>
-<h2 id="&#x538B;&#x7F29;">&#x538B;&#x7F29;</h2>
+<h2 id="&#x89E3;&#x538B;&#x7F29;">&#x89E3;&#x538B;&#x7F29;</h2>
 <pre><code class="lang-bash">tar -zcvf dir1.tar.gz dir/ <span class="hljs-comment"># -c&#x662F;&#x538B;&#x7F29;&#x6210;tar&#x683C;&#x5F0F;&#xFF0C;-z&#x662F;&#x538B;&#x7F29;&#x6210;gzip&#x683C;&#x5F0F;(&#x4E0D;&#x652F;&#x6301;&#x538B;&#x7F29;&#x76EE;&#x5F55;)&#xFF0C;-v&#x662F;&#x663E;&#x793A;&#x8FC7;&#x7A0B;&#xFF0C;-f&#x662F;&#x6307;&#x5B9A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x540D;(&#x5FC5;&#x987B;&#x6709;&#x4E14;&#x5FC5;&#x987B;&#x653E;&#x6700;&#x540E;)</span>
 tar -C /opt -xjf dir1.tar.bz2 <span class="hljs-comment"># -C&#x662F;&#x89E3;&#x538B;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#xFF0C;-x&#x662F;&#x89E3;&#x538B;tar&#x683C;&#x5F0F;&#xFF0C;-j&#x662F;&#x89E3;&#x538B;bzip2&#x683C;&#x5F0F;</span>
+
+zip -r dir1.zip dir1/ <span class="hljs-comment"># -r&#x662F;&#x538B;&#x7F29;&#x76EE;&#x5F55;</span>
+unzip file1.zip <span class="hljs-comment"># &#x89E3;&#x538B;zip&#x683C;&#x5F0F;</span>
 </code></pre>
 <h2 id="&#x7CFB;&#x7EDF;">&#x7CFB;&#x7EDF;</h2>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</span>
@@ -349,7 +365,7 @@ netstat -antup <span class="hljs-comment"># -a&#x662F;&#x67E5;&#x770B;&#x6240;&#
 <tr>
 <td style="text-align:center">&#x8D44;&#x6E90;&#x6D88;&#x8017;</td>
 <td style="text-align:center"></td>
-<td style="text-align:center">CPU&#x548C;&#x5185;&#x5B58;&#x8017;&#x8D39;&#x5C0F;&#x4E8E;&#x8FDB;&#x7A0B;</td>
+<td style="text-align:center"><code>CPU</code>&#x548C;&#x5185;&#x5B58;&#x8017;&#x8D39;&#x5C0F;&#x4E8E;&#x8FDB;&#x7A0B;</td>
 </tr>
 </tbody>
 </table>
@@ -370,42 +386,13 @@ killall <span class="hljs-_">-l</span> <span class="hljs-comment"># &#x5173;&#x9
 <span class="hljs-comment"># &#x67E5;&#x770B;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
 w root
 
-<span class="hljs-comment"># &#x6302;&#x8D77;&#xFF0C;&#x5373;&#x4F7F;&#x7528;&#x6237;&#x9000;&#x51FA;&#x767B;&#x9646;&#x4F9D;&#x65E7;&#x7EE7;&#x7EED;&#x6267;&#x884C;</span>
+<span class="hljs-comment"># &#x6302;&#x8D77;&#xFF0C;&#x5373;&#x4F7F;&#x7528;&#x6237;&#x9000;&#x51FA;&#x767B;&#x5F55;&#x4F9D;&#x65E7;&#x7EE7;&#x7EED;&#x6267;&#x884C;</span>
 nohup ping baidu.com &amp;
 
 <span class="hljs-comment"># &#x67E5;&#x770B;&#x8D1F;&#x8F7D;</span>
 uptime
 </code></pre>
-<h2 id="&#x6743;&#x9650;&#x7BA1;&#x7406;">&#x6743;&#x9650;&#x7BA1;&#x7406;</h2>
-<h3 id="&#x7528;&#x6237;&#x6743;&#x9650;">&#x7528;&#x6237;&#x6743;&#x9650;</h3>
-<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7528;&#x6237;</span>
-whoami
-<span class="hljs-comment"># &#x67E5;&#x770B;&#x6240;&#x6709;&#x7528;&#x6237;</span>
-cat /etc/passwd
-<span class="hljs-comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7EC4;</span>
-groups
-<span class="hljs-comment"># &#x67E5;&#x770B;&#x6240;&#x6709;&#x7EC4;</span>
-cat /etc/group
-
-<span class="hljs-comment"># &#x9000;&#x51FA;&#x7528;&#x6237;</span>
-<span class="hljs-built_in">exit</span> root
-<span class="hljs-comment"># &#x5207;&#x6362;&#x7528;&#x6237;</span>
-su root
-<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x7528;&#x6237;</span>
-useradd demo
-<span class="hljs-comment"># &#x4FEE;&#x6539;&#x5BC6;&#x7801;</span>
-passwd demo
-<span class="hljs-comment"># &#x5220;&#x9664;&#x7528;&#x6237;</span>
-userdel -r demo <span class="hljs-comment"># -r&#x662F;&#x5220;&#x9664;&#x7528;&#x6237;&#x540C;&#x65F6;&#x5220;&#x9664;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;</span>
-
-<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x7EC4;</span>
-groupadd -g 1024 demo
-<span class="hljs-comment"># &#x4FEE;&#x6539;&#x7EC4;&#x540D;</span>
-groupmod -n newGroup oldGroup
-<span class="hljs-comment"># &#x5220;&#x9664;&#x7EC4;</span>
-groupdel -g 1024
-</code></pre>
-<h3 id="&#x6587;&#x4EF6;&#x6743;&#x9650;">&#x6587;&#x4EF6;&#x6743;&#x9650;</h3>
+<h2 id="&#x6587;&#x4EF6;&#x6743;&#x9650;">&#x6587;&#x4EF6;&#x6743;&#x9650;</h2>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x7B2C;1&#x4F4D;&#x662F;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;d&#x662F;&#x76EE;&#x5F55;&#xFF0C;-&#x662F;&#x666E;&#x901A;&#x6587;&#x4EF6;&#xFF0C;l&#x662F;&#x94FE;&#x63A5;&#x6587;&#x4EF6;</span>
 <span class="hljs-comment"># &#x7B2C;2-4&#x4F4D;&#x662F;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x6743;&#x9650;&#xFF0C;&#x7B2C;2-4&#x4F4D;&#x662F;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x7EC4;&#x6743;&#x9650;&#xFF0C;&#x7B2C;2-4&#x4F4D;&#x662F;&#x5176;&#x5B83;&#x7528;&#x6237;&#x6743;&#x9650;</span>
 <span class="hljs-comment"># r&#x662F;(read)&#x8BFB;&#xFF0C;w&#x662F;(write)&#x5199;&#xFF0C;x&#x662F;(execute)&#x6267;&#x884C;</span>
@@ -450,7 +437,7 @@ chgrp root README.md
                 </a>
                 
                 
-                <a href="Linux常用软件.html" class="navigation navigation-next " aria-label="Next page: Linux常用软件">
+                <a href="Linux用户权限.html" class="navigation navigation-next " aria-label="Next page: Linux用户权限">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -461,7 +448,7 @@ chgrp root README.md
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Shell命令","level":"1.3.2","depth":2,"next":{"title":"Linux常用软件","level":"1.3.3","depth":2,"path":"Linux基础/Linux常用软件.md","ref":"Linux基础/Linux常用软件.md","articles":[]},"previous":{"title":"Linux目录","level":"1.3.1","depth":2,"path":"Linux基础/Linux目录.md","ref":"Linux基础/Linux目录.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Shell命令.md","mtime":"2020-11-26T15:00:30.679Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-26T16:06:35.295Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Shell命令","level":"1.3.2","depth":2,"next":{"title":"Linux用户权限","level":"1.3.3","depth":2,"path":"Linux基础/Linux用户权限.md","ref":"Linux基础/Linux用户权限.md","articles":[]},"previous":{"title":"Linux目录","level":"1.3.1","depth":2,"path":"Linux基础/Linux目录.md","ref":"Linux基础/Linux目录.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Shell命令.md","mtime":"2020-11-27T01:02:00.982Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T01:02:59.635Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
