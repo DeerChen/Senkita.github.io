@@ -1,4 +1,4 @@
-
+# Linux基础
 
 ## 链接
 
@@ -6,14 +6,14 @@
 
 ### RedHat系
 
-1. [`CentOS官网`](http://www.centos.org/)
+1. [`CentOS`官网](http://www.centos.org/)
 2. [`CentOS`搜狐镜像](http://mirrors.sohu.com/centos/)
-3. [`CentOS网易镜像`](http://mirrors.163.com/centos/)
+3. [`CentOS`网易镜像](http://mirrors.163.com/centos/)
 
 ### Debian系
 
-1. [`Debian官网`](http://www.debian.org/)
-2. [`Debian网易镜像`](http://mirrors.163.com/debian/)
+1. [`Debian`官网](http://www.debian.org/)
+2. [`Debian`网易镜像](http://mirrors.163.com/debian/)
 3. [`Ubuntu`官网](https://ubuntu.com/)
 
 ## 专题讨论
@@ -33,7 +33,7 @@
 
 #### 系统结构
 
-![DB6Dc4.jpg](https://s3.ax1x.com/2020/11/26/DB6Dc4.jpg)
+![System Structure](https://s3.ax1x.com/2020/11/26/DB6Dc4.jpg)
 
 1. 内核层：调控系统资源
 2. `Shell`层：终端(`Terminal`)

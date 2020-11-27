@@ -22,8 +22,9 @@ i # 进入编辑模式
 远程连接
 
 ```bash
-# 生成密钥
-ssh-keygen -t rsa -C demo@example.com # -t是指定密钥类型，可以是rsa也可以是ed25519，-C是识别密钥注释
+# 生成密钥，公钥放远端
+# 公钥位置：Windows在%USERPROFILE%\.ssh\.id_rsa.pub，Unix在~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -f id_ed25519 -C demo@example.com # -t是指定密钥类型，可以是rsa也可以是ed25519，-f是指定文件名，-C是识别密钥注释
 
 # 传输文件
 scp -r dir/ root@192.168.1.1:/root/demo # -r是针对目录传输

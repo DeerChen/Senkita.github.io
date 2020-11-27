@@ -199,6 +199,77 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4" data-path="../Git/">
+            
+                <a href="../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Git/Git常用命令.html">
+            
+                <a href="../Git/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Git/Git常用操作.html">
+            
+                <a href="../Git/Git常用操作.html">
+            
+                    
+                    Git常用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Git/Git Flow工作流.html">
+            
+                <a href="../Git/Git Flow工作流.html">
+            
+                    
+                    Git Flow工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Git/Git规范.html">
+            
+                <a href="../Git/Git规范.html">
+            
+                    
+                    Git规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -260,8 +331,9 @@ i <span class="hljs-comment"># &#x8FDB;&#x5165;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;<
 </code></pre>
 <h2 id="ssh">SSH</h2>
 <p>&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</p>
-<pre><code class="lang-bash"><span class="hljs-comment"># &#x751F;&#x6210;&#x5BC6;&#x94A5;</span>
-ssh-keygen -t rsa -C demo@example.com <span class="hljs-comment"># -t&#x662F;&#x6307;&#x5B9A;&#x5BC6;&#x94A5;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;rsa&#x4E5F;&#x53EF;&#x4EE5;&#x662F;ed25519&#xFF0C;-C&#x662F;&#x8BC6;&#x522B;&#x5BC6;&#x94A5;&#x6CE8;&#x91CA;</span>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x751F;&#x6210;&#x5BC6;&#x94A5;&#xFF0C;&#x516C;&#x94A5;&#x653E;&#x8FDC;&#x7AEF;</span>
+<span class="hljs-comment"># &#x516C;&#x94A5;&#x4F4D;&#x7F6E;&#xFF1A;Windows&#x5728;%USERPROFILE%\.ssh\.id_rsa.pub&#xFF0C;Unix&#x5728;~/.ssh/id_rsa.pub</span>
+ssh-keygen -t rsa <span class="hljs-_">-f</span> id_ed25519 -C demo@example.com <span class="hljs-comment"># -t&#x662F;&#x6307;&#x5B9A;&#x5BC6;&#x94A5;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;rsa&#x4E5F;&#x53EF;&#x4EE5;&#x662F;ed25519&#xFF0C;-f&#x662F;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;-C&#x662F;&#x8BC6;&#x522B;&#x5BC6;&#x94A5;&#x6CE8;&#x91CA;</span>
 
 <span class="hljs-comment"># &#x4F20;&#x8F93;&#x6587;&#x4EF6;</span>
 scp -r dir/ root@192.168.1.1:/root/demo <span class="hljs-comment"># -r&#x662F;&#x9488;&#x5BF9;&#x76EE;&#x5F55;&#x4F20;&#x8F93;</span>
@@ -369,7 +441,7 @@ sudo vi /etc/proxychains.conf
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux常用软件","level":"1.3.4","depth":2,"next":{"title":"Linux常用配置","level":"1.3.5","depth":2,"path":"Linux基础/Linux常用配置.md","ref":"Linux基础/Linux常用配置.md","articles":[]},"previous":{"title":"Linux用户权限","level":"1.3.3","depth":2,"path":"Linux基础/Linux用户权限.md","ref":"Linux基础/Linux用户权限.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Linux常用软件.md","mtime":"2020-11-27T01:02:01.001Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T01:02:59.635Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux常用软件","level":"1.3.4","depth":2,"next":{"title":"Linux常用配置","level":"1.3.5","depth":2,"path":"Linux基础/Linux常用配置.md","ref":"Linux基础/Linux常用配置.md","articles":[]},"previous":{"title":"Linux用户权限","level":"1.3.3","depth":2,"path":"Linux基础/Linux用户权限.md","ref":"Linux基础/Linux用户权限.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Linux基础/Linux常用软件.md","mtime":"2020-11-27T01:51:04.855Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T05:26:42.616Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
