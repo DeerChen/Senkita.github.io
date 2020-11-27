@@ -129,3 +129,45 @@ module.exports = {
 };
 ```
 
+## README.md
+
+```markdown
+## Introduction
+项目介绍
+## Features
+项目特性
+## To Do
+项目To do
+## Installation
+项目安装步骤
+## Usage
+项目使用说明
+## Maintainers
+项目维护者
+## License
+项目许可
+## References
+项目引用
+```
+
+## ChangeLog.md
+
+```markdown
+# 更新日志
+## [Unreleased]
+
+## [1.0.0] - 2020-02-02
+### Added
+* 新增项1
+* 新增项1
+### Changed
+* 改动项1
+* 改动项2
+### Fixed
+* 修复项1
+* 修复项2
+### Removed
+* 移除项1
+* 移除项2
+```
+
