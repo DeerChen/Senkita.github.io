@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git常用操作 · GitBook</title>
+        <title>Markdown作图 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Git Flow工作流.html" />
+    <link rel="next" href="LaTex常用语法.html" />
     
     
-    <link rel="prev" href="Git常用命令.html" />
+    <link rel="prev" href="Markdown基础语法.html" />
     
 
     </head>
@@ -199,9 +199,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../Git/">
             
-                <a href="./">
+                <a href="../Git/">
             
                     
                     Git
@@ -213,9 +213,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="Git常用命令.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Git/Git常用命令.html">
             
-                <a href="Git常用命令.html">
+                <a href="../Git/Git常用命令.html">
             
                     
                     Git常用命令
@@ -226,9 +226,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="Git常用操作.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Git/Git常用操作.html">
             
-                <a href="Git常用操作.html">
+                <a href="../Git/Git常用操作.html">
             
                     
                     Git常用操作
@@ -239,9 +239,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="Git Flow工作流.html">
+        <li class="chapter " data-level="1.4.3" data-path="../Git/Git Flow工作流.html">
             
-                <a href="Git Flow工作流.html">
+                <a href="../Git/Git Flow工作流.html">
             
                     
                     Git Flow工作流
@@ -252,9 +252,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="Git规范.html">
+        <li class="chapter " data-level="1.4.4" data-path="../Git/Git规范.html">
             
-                <a href="Git规范.html">
+                <a href="../Git/Git规范.html">
             
                     
                     Git规范
@@ -270,9 +270,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../Markdown/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../Markdown/">
+                <a href="./">
             
                     
                     Markdown
@@ -284,9 +284,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../Markdown/Markdown基础语法.html">
+        <li class="chapter " data-level="1.5.1" data-path="Markdown基础语法.html">
             
-                <a href="../Markdown/Markdown基础语法.html">
+                <a href="Markdown基础语法.html">
             
                     
                     Markdown基础语法
@@ -297,9 +297,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../Markdown/Markdown作图.html">
+        <li class="chapter active" data-level="1.5.2" data-path="Markdown作图.html">
             
-                <a href="../Markdown/Markdown作图.html">
+                <a href="Markdown作图.html">
             
                     
                     Markdown作图
@@ -310,9 +310,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../Markdown/LaTex常用语法.html">
+        <li class="chapter " data-level="1.5.3" data-path="LaTex常用语法.html">
             
-                <a href="../Markdown/LaTex常用语法.html">
+                <a href="LaTex常用语法.html">
             
                     
                     LaTex常用语法
@@ -358,7 +358,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Git常用操作</a>
+        <a href=".." >Markdown作图</a>
     </h1>
 </div>
 
@@ -373,37 +373,142 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="git&#x5E38;&#x7528;&#x64CD;&#x4F5C;">Git&#x5E38;&#x7528;&#x64CD;&#x4F5C;</h1>
-<h2 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
-<p><code>sudo vi ~/.ssh/config</code></p>
-<pre><code class="lang-ini"># &#x522B;&#x540D;
-Host gitee
-    # &#x57DF;&#x540D;
-    Hostname gitee.com
+                                <h1 id="markdown&#x4F5C;&#x56FE;">Markdown&#x4F5C;&#x56FE;</h1>
+<h2 id="mermaid">Mermaid</h2>
+<h3 id="&#x6D41;&#x7A0B;&#x56FE;">&#x6D41;&#x7A0B;&#x56FE;</h3>
+<p><code>graph</code>&#x662F;&#x58F0;&#x660E;&#x6D41;&#x7A0B;&#x56FE;&#xFF0C;<code>T</code>&#x662F;&#x4E0A;&#xFF0C;<code>B</code>&#x548C;<code>D</code>&#x662F;&#x4E0B;&#xFF0C;<code>L</code>&#x662F;&#x5DE6;&#xFF0C;<code>R</code>&#x662F;&#x53F3;</p>
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>mermaid
+<span class="hljs-code">    graph TD</span>
 
-    # HTTP&#x4EE3;&#x7406;
-    # ProxyCommand connect -H localhost:10809 %h %p
+<span class="hljs-code">    subgraph &#x5B50;&#x56FE;</span>
+<span class="hljs-code">        A[&#x65B9;&#x5F62;] --&#x5B9E;&#x7EBF;&#x6307;&#x5411;--&gt; B(&#x5706;&#x89D2;)</span>
+<span class="hljs-code">        B --&gt; C&gt;&#x591A;&#x8FB9;&#x5F62;]</span>
+<span class="hljs-code">    end</span>
 
-    User git
-    PreferredAuthentications publickey
-    IdentityFile ~/.ssh/gitee_rsa
+<span class="hljs-code">    C ---|&#x65E0;&#x6307;&#x5411;&#x5B9E;&#x7EBF;| D{&#x83F1;&#x5F62;}</span>
+<span class="hljs-code">    D --- A</span>
 
-Host github
-    Hostname github.com
+<span class="hljs-code">    A -.&#x865A;&#x7EBF;&#x6307;&#x5411;.-&gt; C</span>
+<span class="hljs-code">    B -.-&gt; F</span>
 
-    # SOCKS&#x4EE3;&#x7406;
-    # ProxyCommand connect -S localhost:10808 %h %p
-
-    User git
-    PreferredAuthentications publickey
-    IdentityFile ~/.ssh/github_ed25519
+<span class="hljs-code">    D ==&#x7C97;&#x7EBF;&#x6307;&#x5411;==&gt; F</span>
+<span class="hljs-code">    A ==&gt; F</span>
+<span class="hljs-code">```</span>
 </code></pre>
-<h2 id="&#x81EA;&#x5EFA;git&#x670D;&#x52A1;&#x5668;">&#x81EA;&#x5EFA;Git&#x670D;&#x52A1;&#x5668;</h2>
-<pre><code class="lang-bash"><span class="hljs-comment"># &#x670D;&#x52A1;&#x5668;&#x521D;&#x59CB;&#x5316;</span>
-git init --bare demo.git
-<span class="hljs-comment"># &#x8D4B;&#x6743;</span>
-chown -R root:root demo.git
+<h3 id="&#x65F6;&#x5E8F;&#x56FE;">&#x65F6;&#x5E8F;&#x56FE;</h3>
+<pre><code class="lang-markdown">&#x200B;<span class="hljs-code">```</span>mermaid
+<span class="hljs-code">    sequenceDiagram</span>
+<span class="hljs-code">        Github -&gt;&gt; Local: fetch/clone</span>
+<span class="hljs-code">        Local --&gt;&gt; Github: push</span>
+
+<span class="hljs-code">        Note left of Github: &#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</span>
+<span class="hljs-code">        Note right of Local: &#x672C;&#x5730;&#x4ED3;&#x5E93;</span>
+<span class="hljs-code">        Note over Github, Local: Git</span>
+
+<span class="hljs-code">        participant A</span>
+<span class="hljs-code">        participant B</span>
+
+<span class="hljs-code">        A -&gt; B: Hello, how are you?</span>
+<span class="hljs-code">        B --&gt; A: I&apos;m fine, thank you, and you?</span>
+
+<span class="hljs-code">        loop &#x9694;&#x4E09;&#x5C94;&#x4E94;</span>
+<span class="hljs-code">            A -&gt;&gt; Local: &#x5904;&#x7406;&#x597D;&#x4E86;&#x6CA1;&#xFF1F;</span>
+<span class="hljs-code">            alt &#x597D;&#x4E86;</span>
+<span class="hljs-code">                Local --&gt;&gt; A: &#x597D;&#x4E86;</span>
+<span class="hljs-code">            else</span>
+<span class="hljs-code">                Local --&gt;&gt; A: &#x6CA1;&#x5462;&#x8FD8;</span>
+<span class="hljs-code">            end</span>
+<span class="hljs-code">        end</span>
+&#x200B;
 </code></pre>
+<pre><code>
+### &#x7518;&#x7279;&#x56FE;
+
+```markdown
+&#x200B;```mermaid
+    gantt
+    dateFormat  YYYY-MM-DD
+            title &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;
+            section &#x8BBE;&#x8BA1;
+                &#x9700;&#x6C42;: done,   Need,      2020-01-01,      2020-01-03
+                &#x539F;&#x578B;: active, Prototype, 2020-01-03,      3d
+                UI&#x8BBE;&#x8BA1;:       Draft,     after Prototype, 5d
+            section &#x5F00;&#x53D1;
+                &#x7406;&#x89E3;&#x9700;&#x6C42;: crit, done,   2020-01-01,      24h
+                &#x8BBE;&#x8BA1;&#x6846;&#x67B6;: crit, done,   after Prototype, 2d
+                &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;: crit, active, 3d
+            section &#x6D4B;&#x8BD5;
+                &#x529F;&#x80FD;&#x6D4B;&#x8BD5;: active, funcTest, after des3, 3d
+                &#x538B;&#x529B;&#x6D4B;&#x8BD5;: after funcTest , 20h
+                &#x6D4B;&#x8BD5;&#x62A5;&#x544A;: 48h
+&#x200B;
+</code></pre><pre><code>
+### &#x7C7B;&#x56FE;
+
+`&lt;|--`&#x662F;&#x7EE7;&#x627F;&#xFF0C;`+`&#x662F;&#x516C;&#x6709;&#xFF0C;`-`&#x662F;&#x79C1;&#x6709;
+
+```markdown
+&#x200B;```mermaid
+    classDiagram
+          Animal |&gt;-- Person
+
+          Animal : +int age
+          Animal: +run()
+
+          class Person{
+              +String name
+              +say()
+          }
+&#x200B;
+</code></pre><pre><code>
+### &#x997C;&#x56FE;
+
+```markdown
+&#x200B;```mermaid
+    pie
+        title Vote 2020
+        &quot;Joe Biden&quot;: 51.1
+        &quot;Donald Trump&quot;: 47.2
+        &quot;Jo Jorgensen&quot;: 1.2
+        &quot;Others&quot;: 0.6
+&#x200B;
+</code></pre><pre><code>
+## &#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;
+
+```markdown
+&#x200B;```flow
+    st=&gt;start: &#x5F00;&#x59CB;&#x6846;
+    op=&gt;operation: &#x5904;&#x7406;&#x6846;
+    cond=&gt;condition: &#x5224;&#x65AD;&#x6846;
+    sub1=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;
+    io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;
+    e=&gt;end: &#x7ED3;&#x675F;&#x6846;
+
+    st(right)-&gt;op-&gt;cond
+    cond(true)-&gt;io-&gt;e
+    cond(false)-&gt;sub1(right)-&gt;op
+&#x200B;
+</code></pre><pre><code>
+## &#x6807;&#x51C6;&#x65F6;&#x5E8F;&#x56FE;
+
+```markdown
+&#x200B;```sequence
+    Title: &#x6807;&#x9898;
+
+    Github -&gt;&gt; Local: fetch/clone
+    Local --&gt;&gt; Github: push
+
+    Note left of Github: &#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
+    Note right of Local: &#x672C;&#x5730;&#x4ED3;&#x5E93;
+    Note over Github, Local: Git
+
+    participant A
+    participant B
+
+    A -&gt; B: Hello, how are you?
+    B --&gt; A: I&apos;m fine, thank you, and you?
+&#x200B;
+</code></pre><p>```</p>
 
                                 
                                 </section>
@@ -431,12 +536,12 @@ chown -R root:root demo.git
 
             
                 
-                <a href="Git常用命令.html" class="navigation navigation-prev " aria-label="Previous page: Git常用命令">
+                <a href="Markdown基础语法.html" class="navigation navigation-prev " aria-label="Previous page: Markdown基础语法">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Git Flow工作流.html" class="navigation navigation-next " aria-label="Next page: Git Flow工作流">
+                <a href="LaTex常用语法.html" class="navigation navigation-next " aria-label="Next page: LaTex常用语法">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -447,7 +552,7 @@ chown -R root:root demo.git
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git常用操作","level":"1.4.2","depth":2,"next":{"title":"Git Flow工作流","level":"1.4.3","depth":2,"path":"Git/Git Flow工作流.md","ref":"Git/Git Flow工作流.md","articles":[]},"previous":{"title":"Git常用命令","level":"1.4.1","depth":2,"path":"Git/Git常用命令.md","ref":"Git/Git常用命令.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Git/Git常用操作.md","mtime":"2020-11-27T04:13:38.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T11:00:10.647Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Markdown作图","level":"1.5.2","depth":2,"next":{"title":"LaTex常用语法","level":"1.5.3","depth":2,"path":"Markdown/LaTex常用语法.md","ref":"Markdown/LaTex常用语法.md","articles":[]},"previous":{"title":"Markdown基础语法","level":"1.5.1","depth":2,"path":"Markdown/Markdown基础语法.md","ref":"Markdown/Markdown基础语法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Markdown/Markdown作图.md","mtime":"2020-11-27T10:00:13.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T11:00:10.647Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
