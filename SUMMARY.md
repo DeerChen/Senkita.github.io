@@ -13,6 +13,7 @@
     -   [Git 常用操作](Git/Git常用操作.md)
     -   [GitFlow 工作流](Git/GitFlow工作流.md)
     -   [Git 规范](Git/Git规范.md)
+    -   [持续集成](Git/持续集成.md)
 -   [Markdown](Markdown/README.md)
     -   [Markdown 基础语法](Markdown/Markdown基础语法.md)
     -   [Markdown 作图](Markdown/Markdown作图.md)
