@@ -38,6 +38,8 @@ git push -u origin main # -u是标识默认提交仓库和分支
 
 # 关联项目地址
 git remote add origin git@github.com:demo/example.git
+# 设置项目地址
+git remote set-url origin git@github.com:demo/example.git
 # 删除已关联项目地址
 git remote rm origin
 
