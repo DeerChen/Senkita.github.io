@@ -1,4 +1,4 @@
-# Linux常用配置
+# Linux 常用配置
 
 ## Sudo
 
@@ -64,4 +64,3 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-security main restri
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-proposed main restricted universe multiverse
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ Groovy-proposed main restricted universe multiverse
 ```
-

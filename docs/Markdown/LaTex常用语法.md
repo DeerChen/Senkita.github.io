@@ -1,4 +1,4 @@
-# LaTex常用语法
+# LaTex 常用语法
 
 ## 链接
 
@@ -58,4 +58,3 @@ $$行间公式$$
 % 矩阵
 \begin{matrix} \end{matrix}
 ```
-

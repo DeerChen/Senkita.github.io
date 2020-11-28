@@ -1,4 +1,4 @@
-# Shell命令
+# Shell 命令
 
 ## 帮助
 
@@ -170,4 +170,3 @@ chown -R root:root README.md # -R是递归修改
 # change file group ownership修改所属组
 chgrp root README.md
 ```
-

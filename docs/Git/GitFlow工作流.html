@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git Flow工作流 · GitBook</title>
+        <title>GitFlow 工作流 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -120,7 +120,7 @@
                 <a href="../Linux基础/">
             
                     
-                    Linux基础
+                    Linux 基础
             
                 </a>
             
@@ -134,7 +134,7 @@
                 <a href="../Linux基础/Linux目录.html">
             
                     
-                    Linux目录
+                    Linux 目录
             
                 </a>
             
@@ -147,7 +147,7 @@
                 <a href="../Linux基础/Shell命令.html">
             
                     
-                    Shell命令
+                    Shell 命令
             
                 </a>
             
@@ -160,7 +160,7 @@
                 <a href="../Linux基础/Linux用户权限.html">
             
                     
-                    Linux用户权限
+                    Linux 用户权限
             
                 </a>
             
@@ -173,7 +173,7 @@
                 <a href="../Linux基础/Linux常用软件.html">
             
                     
-                    Linux常用软件
+                    Linux 常用软件
             
                 </a>
             
@@ -186,7 +186,7 @@
                 <a href="../Linux基础/Linux常用配置.html">
             
                     
-                    Linux常用配置
+                    Linux 常用配置
             
                 </a>
             
@@ -218,7 +218,7 @@
                 <a href="Git常用命令.html">
             
                     
-                    Git常用命令
+                    Git 常用命令
             
                 </a>
             
@@ -231,7 +231,7 @@
                 <a href="Git常用操作.html">
             
                     
-                    Git常用操作
+                    Git 常用操作
             
                 </a>
             
@@ -239,12 +239,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.3" data-path="Git Flow工作流.html">
+        <li class="chapter active" data-level="1.4.3" data-path="GitFlow工作流.html">
             
-                <a href="Git Flow工作流.html">
+                <a href="GitFlow工作流.html">
             
                     
-                    Git Flow工作流
+                    GitFlow 工作流
             
                 </a>
             
@@ -257,7 +257,7 @@
                 <a href="Git规范.html">
             
                     
-                    Git规范
+                    Git 规范
             
                 </a>
             
@@ -289,7 +289,7 @@
                 <a href="../Markdown/Markdown基础语法.html">
             
                     
-                    Markdown基础语法
+                    Markdown 基础语法
             
                 </a>
             
@@ -302,7 +302,7 @@
                 <a href="../Markdown/Markdown作图.html">
             
                     
-                    Markdown作图
+                    Markdown 作图
             
                 </a>
             
@@ -315,7 +315,7 @@
                 <a href="../Markdown/LaTex常用语法.html">
             
                     
-                    LaTex常用语法
+                    LaTex 常用语法
             
                 </a>
             
@@ -358,7 +358,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Git Flow工作流</a>
+        <a href=".." >GitFlow 工作流</a>
     </h1>
 </div>
 
@@ -373,7 +373,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="git-flow&#x5DE5;&#x4F5C;&#x6D41;">Git Flow&#x5DE5;&#x4F5C;&#x6D41;</h1>
+                                <h1 id="gitflow-&#x5DE5;&#x4F5C;&#x6D41;">GitFlow &#x5DE5;&#x4F5C;&#x6D41;</h1>
 <p>&#x591A;&#x5206;&#x652F;&#x534F;&#x540C;</p>
 <p><img src="https://s3.ax1x.com/2020/11/27/DDd4te.png" alt="Git Flow"></p>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x5B89;&#x88C5;git-flow</span>
@@ -389,9 +389,9 @@ git flow init
 git branch develop
 git push -u origin develop
 </code></pre>
-<h3 id="feature&#x5206;&#x652F;">feature&#x5206;&#x652F;</h3>
+<h3 id="feature-&#x5206;&#x652F;">feature &#x5206;&#x652F;</h3>
 <p>&#x7528;&#x4E8E;&#x6DFB;&#x52A0;&#x529F;&#x80FD;&#x7279;&#x6027;</p>
-<h4 id="&#x4F7F;&#x7528;git-flow">&#x4F7F;&#x7528;git-flow</h4>
+<h4 id="&#x4F7F;&#x7528;-git-flow">&#x4F7F;&#x7528; git-flow</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x521B;&#x5EFA;feature&#x5206;&#x652F;</span>
 git flow feature start Feature-1
 
@@ -404,7 +404,7 @@ git flow feature pull origin Feature-1
 <span class="hljs-comment"># &#x5B8C;&#x6210;feature&#x5206;&#x652F;&#xFF0C;&#x52A0;&#x5165;develop&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x5220;&#x9664;feature&#x5206;&#x652F;</span>
 git flow feature finish Feature-1
 </code></pre>
-<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;git">&#x4F7F;&#x7528;&#x539F;&#x751F;git</h4>
+<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;-git">&#x4F7F;&#x7528;&#x539F;&#x751F; git</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x57FA;&#x4E8E;develop&#x5206;&#x652F;&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;&#x5230;feature&#x5206;&#x652F;</span>
 git checkout -b Feature-1 develop
 
@@ -424,9 +424,9 @@ git push origin develop
 git branch <span class="hljs-_">-d</span> Feature-1
 git push origin --delete Feature-1
 </code></pre>
-<h3 id="release&#x5206;&#x652F;">release&#x5206;&#x652F;</h3>
+<h3 id="release-&#x5206;&#x652F;">release &#x5206;&#x652F;</h3>
 <p>&#x7528;&#x4E8E;&#x7248;&#x672C;&#x53D1;&#x5E03;&#xFF0C;&#x53EF;&#x5C06;&#x6539;&#x52A8;&#x5408;&#x5E76;&#x5165;<code>main</code>&#x5206;&#x652F;&#x548C;<code>develop</code>&#x5206;&#x652F;</p>
-<h4 id="&#x4F7F;&#x7528;git-flow">&#x4F7F;&#x7528;git-flow</h4>
+<h4 id="&#x4F7F;&#x7528;-git-flow">&#x4F7F;&#x7528; git-flow</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x521B;&#x5EFA;release&#x5206;&#x652F;</span>
 git flow release start Release-1
 
@@ -436,7 +436,7 @@ git flow release publish Release-1
 <span class="hljs-comment"># &#x5B8C;&#x6210;release&#x5206;&#x652F;&#xFF0C;&#x52A0;&#x5165;develop&#x5206;&#x652F;&#x548C;main&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x5220;&#x9664;release&#x5206;&#x652F;</span>
 git flow finish Release-1
 </code></pre>
-<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;git">&#x4F7F;&#x7528;&#x539F;&#x751F;Git</h4>
+<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;-git">&#x4F7F;&#x7528;&#x539F;&#x751F; Git</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x57FA;&#x4E8E;develop&#x5206;&#x652F;&#xFF0C;&#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;&#x5230;release&#x5206;&#x652F;</span>
 git checkout -b Release-1 develop
 
@@ -454,14 +454,14 @@ git push origin develop
 git branch <span class="hljs-_">-d</span> Release-1
 git push origin --delete Release-1
 </code></pre>
-<h3 id="hotfix&#x5206;&#x652F;">hotfix&#x5206;&#x652F;</h3>
+<h3 id="hotfix-&#x5206;&#x652F;">hotfix &#x5206;&#x652F;</h3>
 <p><code>hotfix</code>&#x5206;&#x652F;&#x57FA;&#x4E8E;<code>main</code>&#x5206;&#x652F;&#xFF0C;<code>bugfix</code>&#x5206;&#x652F;&#x57FA;&#x4E8E;<code>develop</code>&#x5206;&#x652F;</p>
-<h4 id="&#x4F7F;&#x7528;git-flow">&#x4F7F;&#x7528;git-flow</h4>
+<h4 id="&#x4F7F;&#x7528;-git-flow">&#x4F7F;&#x7528; git-flow</h4>
 <pre><code class="lang-bash">git flow hotfix start Hotfix-1
 
 git flow hotfix finish Hotfix-1
 </code></pre>
-<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;git">&#x4F7F;&#x7528;&#x539F;&#x751F;Git</h4>
+<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;-git">&#x4F7F;&#x7528;&#x539F;&#x751F; Git</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x4ECE;main&#x5206;&#x652F;&#x4E2D;&#x521B;&#x5EFA;hotfix&#x5206;&#x652F;</span>
 git checkout -b Hotfix-1 main
 
@@ -505,12 +505,12 @@ git push --tags
 
             
                 
-                <a href="Git常用操作.html" class="navigation navigation-prev " aria-label="Previous page: Git常用操作">
+                <a href="Git常用操作.html" class="navigation navigation-prev " aria-label="Previous page: Git 常用操作">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Git规范.html" class="navigation navigation-next " aria-label="Next page: Git规范">
+                <a href="Git规范.html" class="navigation navigation-next " aria-label="Next page: Git 规范">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -521,7 +521,7 @@ git push --tags
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git Flow工作流","level":"1.4.3","depth":2,"next":{"title":"Git规范","level":"1.4.4","depth":2,"path":"Git/Git规范.md","ref":"Git/Git规范.md","articles":[]},"previous":{"title":"Git常用操作","level":"1.4.2","depth":2,"path":"Git/Git常用操作.md","ref":"Git/Git常用操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Git/Git Flow工作流.md","mtime":"2020-11-27T04:26:03.074Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-28T01:42:53.283Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GitFlow 工作流","level":"1.4.3","depth":2,"next":{"title":"Git 规范","level":"1.4.4","depth":2,"path":"Git/Git规范.md","ref":"Git/Git规范.md","articles":[]},"previous":{"title":"Git 常用操作","level":"1.4.2","depth":2,"path":"Git/Git常用操作.md","ref":"Git/Git常用操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Git/GitFlow工作流.md","mtime":"2020-11-28T02:35:36.538Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-28T02:36:29.726Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

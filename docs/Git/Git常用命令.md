@@ -1,4 +1,4 @@
-# Git常用命令
+# Git 常用命令
 
 ## 基本设置
 
@@ -126,7 +126,7 @@ git reset --hard HEAD^
 
 #### 提交到了远程仓库
 
-即已经`push`过了，只能用一次新commit去撤回一次提交
+即已经`push`过了，只能用一次新 commit 去撤回一次提交
 
 ```bash
 # 直接硬核回退到上一个commit

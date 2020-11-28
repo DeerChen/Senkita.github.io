@@ -1,4 +1,4 @@
-# Git规范
+# Git 规范
 
 ## Commit Message
 
@@ -9,16 +9,20 @@ git commit # 打开提交信息文档进行编辑
 ### 提交信息文档
 
 ```markdown
-# type(scope): subject简述
+# type(scope): subject 简述
+
 build(packages.json): build the framework
 
-# body详细描述
-- Add TypeScript support
+# body 详细描述
+
+-   Add TypeScript support
 
 # breaking changes
-BREAKING CHANGE: Older versions are not support  any more
+
+BREAKING CHANGE: Older versions are not support any more
 
 # affect issue
+
 resolves #110, #120, #119
 ```
 
@@ -47,7 +51,7 @@ resolves #110, #120, #119
 
 ### subject
 
-以动词一般现在时第一人称开头，首字母小写，不加句号，50字以内
+以动词一般现在时第一人称开头，首字母小写，不加句号，50 字以内
 
 ### body
 
@@ -100,7 +104,7 @@ npm install -g cz-conventional-changelog
 conventional-changelog -p angular -i CHANGELOG.md -w -r 0 # -p是指定规范，-i是指定文件名，-w是覆写，-r是生成全部
 ```
 
-### commitlint和husky
+### commitlint 和 husky
 
 `commitlint`提供格式校验，`husky`提供更易用的`git hook`
 
@@ -115,7 +119,7 @@ npm i -D husky @commitlint/config-conventional @commitlint/cli
 {
     "husky": {
         "hooks": {
-          "commit-msg": "commitlint -e $GIT_PARAMS"
+            "commit-msg": "commitlint -e $GIT_PARAMS"
         }
     }
 }
@@ -125,7 +129,7 @@ npm i -D husky @commitlint/config-conventional @commitlint/cli
 
 ```js
 module.exports = {
-    extends: ["@commitlint/config-conventional"]
+    extends: ['@commitlint/config-conventional'],
 };
 ```
 
@@ -133,20 +137,35 @@ module.exports = {
 
 ```markdown
 ## Introduction
+
 项目介绍
+
 ## Features
+
 项目特性
+
 ## To Do
-项目To do
+
+项目 To do
+
 ## Installation
+
 项目安装步骤
+
 ## Usage
+
 项目使用说明
+
 ## Maintainers
+
 项目维护者
+
 ## License
+
 项目许可
+
 ## References
+
 项目引用
 ```
 
@@ -154,20 +173,28 @@ module.exports = {
 
 ```markdown
 # 更新日志
+
 ## [Unreleased]
 
 ## [1.0.0] - 2020-02-02
-### Added
-* 新增项1
-* 新增项1
-### Changed
-* 改动项1
-* 改动项2
-### Fixed
-* 修复项1
-* 修复项2
-### Removed
-* 移除项1
-* 移除项2
-```
 
+### Added
+
+-   新增项 1
+-   新增项 1
+
+### Changed
+
+-   改动项 1
+-   改动项 2
+
+### Fixed
+
+-   修复项 1
+-   修复项 2
+
+### Removed
+
+-   移除项 1
+-   移除项 2
+```

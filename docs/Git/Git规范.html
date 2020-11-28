@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git规范 · GitBook</title>
+        <title>Git 规范 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -60,7 +60,7 @@
     <link rel="next" href="../Markdown/" />
     
     
-    <link rel="prev" href="Git Flow工作流.html" />
+    <link rel="prev" href="GitFlow工作流.html" />
     
 
     </head>
@@ -120,7 +120,7 @@
                 <a href="../Linux基础/">
             
                     
-                    Linux基础
+                    Linux 基础
             
                 </a>
             
@@ -134,7 +134,7 @@
                 <a href="../Linux基础/Linux目录.html">
             
                     
-                    Linux目录
+                    Linux 目录
             
                 </a>
             
@@ -147,7 +147,7 @@
                 <a href="../Linux基础/Shell命令.html">
             
                     
-                    Shell命令
+                    Shell 命令
             
                 </a>
             
@@ -160,7 +160,7 @@
                 <a href="../Linux基础/Linux用户权限.html">
             
                     
-                    Linux用户权限
+                    Linux 用户权限
             
                 </a>
             
@@ -173,7 +173,7 @@
                 <a href="../Linux基础/Linux常用软件.html">
             
                     
-                    Linux常用软件
+                    Linux 常用软件
             
                 </a>
             
@@ -186,7 +186,7 @@
                 <a href="../Linux基础/Linux常用配置.html">
             
                     
-                    Linux常用配置
+                    Linux 常用配置
             
                 </a>
             
@@ -218,7 +218,7 @@
                 <a href="Git常用命令.html">
             
                     
-                    Git常用命令
+                    Git 常用命令
             
                 </a>
             
@@ -231,7 +231,7 @@
                 <a href="Git常用操作.html">
             
                     
-                    Git常用操作
+                    Git 常用操作
             
                 </a>
             
@@ -239,12 +239,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="Git Flow工作流.html">
+        <li class="chapter " data-level="1.4.3" data-path="GitFlow工作流.html">
             
-                <a href="Git Flow工作流.html">
+                <a href="GitFlow工作流.html">
             
                     
-                    Git Flow工作流
+                    GitFlow 工作流
             
                 </a>
             
@@ -257,7 +257,7 @@
                 <a href="Git规范.html">
             
                     
-                    Git规范
+                    Git 规范
             
                 </a>
             
@@ -289,7 +289,7 @@
                 <a href="../Markdown/Markdown基础语法.html">
             
                     
-                    Markdown基础语法
+                    Markdown 基础语法
             
                 </a>
             
@@ -302,7 +302,7 @@
                 <a href="../Markdown/Markdown作图.html">
             
                     
-                    Markdown作图
+                    Markdown 作图
             
                 </a>
             
@@ -315,7 +315,7 @@
                 <a href="../Markdown/LaTex常用语法.html">
             
                     
-                    LaTex常用语法
+                    LaTex 常用语法
             
                 </a>
             
@@ -358,7 +358,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Git规范</a>
+        <a href=".." >Git 规范</a>
     </h1>
 </div>
 
@@ -373,21 +373,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="git&#x89C4;&#x8303;">Git&#x89C4;&#x8303;</h1>
+                                <h1 id="git-&#x89C4;&#x8303;">Git &#x89C4;&#x8303;</h1>
 <h2 id="commit-message">Commit Message</h2>
 <pre><code class="lang-bash">git commit <span class="hljs-comment"># &#x6253;&#x5F00;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</span>
 </code></pre>
 <h3 id="&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;">&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;</h3>
-<pre><code class="lang-markdown"><span class="hljs-section"># type(scope): subject&#x7B80;&#x8FF0;</span>
+<pre><code class="lang-markdown"><span class="hljs-section"># type(scope): subject &#x7B80;&#x8FF0;</span>
+
 build(packages.json): build the framework
 
-<span class="hljs-section"># body&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;</span>
-<span class="hljs-bullet">- </span>Add TypeScript support
+<span class="hljs-section"># body &#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;</span>
+
+<span class="hljs-bullet">-   </span>Add TypeScript support
 
 <span class="hljs-section"># breaking changes</span>
-BREAKING CHANGE: Older versions are not support  any more
+
+BREAKING CHANGE: Older versions are not support any more
 
 <span class="hljs-section"># affect issue</span>
+
 resolves #110, #120, #119
 </code></pre>
 <h3 id="type">type</h3>
@@ -411,7 +415,7 @@ resolves #110, #120, #119
 <h3 id="scope">scope</h3>
 <p>&#x6307;&#x51FA;&#x6539;&#x52A8;&#x8303;&#x56F4;&#xFF0C;&#x5982;&#x679C;&#x8303;&#x56F4;&#x8DE8;&#x6A21;&#x5757;&#xFF0C;&#x5EFA;&#x8BAE;&#x5206;&#x62C6;&#x63D0;&#x4EA4;&#xFF0C;&#x6709;&#x5229;&#x4E8E;&#x8FFD;&#x8E2A;&#x7EF4;&#x62A4;</p>
 <h3 id="subject">subject</h3>
-<p>&#x4EE5;&#x52A8;&#x8BCD;&#x4E00;&#x822C;&#x73B0;&#x5728;&#x65F6;&#x7B2C;&#x4E00;&#x4EBA;&#x79F0;&#x5F00;&#x5934;&#xFF0C;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x4E0D;&#x52A0;&#x53E5;&#x53F7;&#xFF0C;50&#x5B57;&#x4EE5;&#x5185;</p>
+<p>&#x4EE5;&#x52A8;&#x8BCD;&#x4E00;&#x822C;&#x73B0;&#x5728;&#x65F6;&#x7B2C;&#x4E00;&#x4EBA;&#x79F0;&#x5F00;&#x5934;&#xFF0C;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x4E0D;&#x52A0;&#x53E5;&#x53F7;&#xFF0C;50 &#x5B57;&#x4EE5;&#x5185;</p>
 <h3 id="body">body</h3>
 <p>&#x4EE5;&#x52A8;&#x8BCD;&#x4E00;&#x822C;&#x73B0;&#x5728;&#x65F6;&#x7B2C;&#x4E00;&#x4EBA;&#x79F0;&#x5F00;&#x5934;&#xFF0C;&#x8BF4;&#x660E;&#x52A8;&#x673A;&#x4EE5;&#x53CA;&#x53D8;&#x5316;</p>
 <h3 id="footer">Footer</h3>
@@ -447,7 +451,7 @@ npm install -g cz-conventional-changelog
 <span class="hljs-comment"># &#x751F;&#x6210;Change Log</span>
 conventional-changelog -p angular -i CHANGELOG.md -w -r 0 <span class="hljs-comment"># -p&#x662F;&#x6307;&#x5B9A;&#x89C4;&#x8303;&#xFF0C;-i&#x662F;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;-w&#x662F;&#x8986;&#x5199;&#xFF0C;-r&#x662F;&#x751F;&#x6210;&#x5168;&#x90E8;</span>
 </code></pre>
-<h3 id="commitlint&#x548C;husky">commitlint&#x548C;husky</h3>
+<h3 id="commitlint-&#x548C;-husky">commitlint &#x548C; husky</h3>
 <p><code>commitlint</code>&#x63D0;&#x4F9B;&#x683C;&#x5F0F;&#x6821;&#x9A8C;&#xFF0C;<code>husky</code>&#x63D0;&#x4F9B;&#x66F4;&#x6613;&#x7528;&#x7684;<code>git hook</code></p>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x5B89;&#x88C5;</span>
 npm i -D husky @commitlint/config-conventional @commitlint/cli
@@ -456,51 +460,75 @@ npm i -D husky @commitlint/config-conventional @commitlint/cli
 <pre><code class="lang-json">{
     <span class="hljs-string">&quot;husky&quot;</span>: {
         <span class="hljs-string">&quot;hooks&quot;</span>: {
-          <span class="hljs-string">&quot;commit-msg&quot;</span>: <span class="hljs-string">&quot;commitlint -e $GIT_PARAMS&quot;</span>
+            <span class="hljs-string">&quot;commit-msg&quot;</span>: <span class="hljs-string">&quot;commitlint -e $GIT_PARAMS&quot;</span>
         }
     }
 }
 </code></pre>
 <h4 id="commitlintconfigjs">commitlint.config.js</h4>
 <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
-    extends: [<span class="hljs-string">&quot;@commitlint/config-conventional&quot;</span>]
+    extends: [<span class="hljs-string">&apos;@commitlint/config-conventional&apos;</span>],
 };
 </code></pre>
 <h2 id="readmemd">README.md</h2>
 <pre><code class="lang-markdown"><span class="hljs-section">## Introduction</span>
+
 &#x9879;&#x76EE;&#x4ECB;&#x7ECD;
+
 <span class="hljs-section">## Features</span>
+
 &#x9879;&#x76EE;&#x7279;&#x6027;
+
 <span class="hljs-section">## To Do</span>
-&#x9879;&#x76EE;To do
+
+&#x9879;&#x76EE; To do
+
 <span class="hljs-section">## Installation</span>
+
 &#x9879;&#x76EE;&#x5B89;&#x88C5;&#x6B65;&#x9AA4;
+
 <span class="hljs-section">## Usage</span>
+
 &#x9879;&#x76EE;&#x4F7F;&#x7528;&#x8BF4;&#x660E;
+
 <span class="hljs-section">## Maintainers</span>
+
 &#x9879;&#x76EE;&#x7EF4;&#x62A4;&#x8005;
+
 <span class="hljs-section">## License</span>
+
 &#x9879;&#x76EE;&#x8BB8;&#x53EF;
+
 <span class="hljs-section">## References</span>
+
 &#x9879;&#x76EE;&#x5F15;&#x7528;
 </code></pre>
 <h2 id="changelogmd">ChangeLog.md</h2>
 <pre><code class="lang-markdown"><span class="hljs-section"># &#x66F4;&#x65B0;&#x65E5;&#x5FD7;</span>
+
 <span class="hljs-section">## [Unreleased]</span>
 
 <span class="hljs-section">## [1.0.0] - 2020-02-02</span>
+
 <span class="hljs-section">### Added</span>
-<span class="hljs-bullet">* </span>&#x65B0;&#x589E;&#x9879;1
-<span class="hljs-bullet">* </span>&#x65B0;&#x589E;&#x9879;1
+
+<span class="hljs-bullet">-   </span>&#x65B0;&#x589E;&#x9879; 1
+<span class="hljs-bullet">-   </span>&#x65B0;&#x589E;&#x9879; 1
+
 <span class="hljs-section">### Changed</span>
-<span class="hljs-bullet">* </span>&#x6539;&#x52A8;&#x9879;1
-<span class="hljs-bullet">* </span>&#x6539;&#x52A8;&#x9879;2
+
+<span class="hljs-bullet">-   </span>&#x6539;&#x52A8;&#x9879; 1
+<span class="hljs-bullet">-   </span>&#x6539;&#x52A8;&#x9879; 2
+
 <span class="hljs-section">### Fixed</span>
-<span class="hljs-bullet">* </span>&#x4FEE;&#x590D;&#x9879;1
-<span class="hljs-bullet">* </span>&#x4FEE;&#x590D;&#x9879;2
+
+<span class="hljs-bullet">-   </span>&#x4FEE;&#x590D;&#x9879; 1
+<span class="hljs-bullet">-   </span>&#x4FEE;&#x590D;&#x9879; 2
+
 <span class="hljs-section">### Removed</span>
-<span class="hljs-bullet">* </span>&#x79FB;&#x9664;&#x9879;1
-<span class="hljs-bullet">* </span>&#x79FB;&#x9664;&#x9879;2
+
+<span class="hljs-bullet">-   </span>&#x79FB;&#x9664;&#x9879; 1
+<span class="hljs-bullet">-   </span>&#x79FB;&#x9664;&#x9879; 2
 </code></pre>
 
                                 
@@ -529,7 +557,7 @@ npm i -D husky @commitlint/config-conventional @commitlint/cli
 
             
                 
-                <a href="Git Flow工作流.html" class="navigation navigation-prev " aria-label="Previous page: Git Flow工作流">
+                <a href="GitFlow工作流.html" class="navigation navigation-prev " aria-label="Previous page: GitFlow 工作流">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -545,7 +573,7 @@ npm i -D husky @commitlint/config-conventional @commitlint/cli
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git规范","level":"1.4.4","depth":2,"next":{"title":"Markdown","level":"1.5","depth":1,"path":"Markdown/README.md","ref":"Markdown/README.md","articles":[{"title":"Markdown基础语法","level":"1.5.1","depth":2,"path":"Markdown/Markdown基础语法.md","ref":"Markdown/Markdown基础语法.md","articles":[]},{"title":"Markdown作图","level":"1.5.2","depth":2,"path":"Markdown/Markdown作图.md","ref":"Markdown/Markdown作图.md","articles":[]},{"title":"LaTex常用语法","level":"1.5.3","depth":2,"path":"Markdown/LaTex常用语法.md","ref":"Markdown/LaTex常用语法.md","articles":[]}]},"previous":{"title":"Git Flow工作流","level":"1.4.3","depth":2,"path":"Git/Git Flow工作流.md","ref":"Git/Git Flow工作流.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Git/Git规范.md","mtime":"2020-11-27T11:19:24.466Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-28T01:42:53.283Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git 规范","level":"1.4.4","depth":2,"next":{"title":"Markdown","level":"1.5","depth":1,"path":"Markdown/README.md","ref":"Markdown/README.md","articles":[{"title":"Markdown 基础语法","level":"1.5.1","depth":2,"path":"Markdown/Markdown基础语法.md","ref":"Markdown/Markdown基础语法.md","articles":[]},{"title":"Markdown 作图","level":"1.5.2","depth":2,"path":"Markdown/Markdown作图.md","ref":"Markdown/Markdown作图.md","articles":[]},{"title":"LaTex 常用语法","level":"1.5.3","depth":2,"path":"Markdown/LaTex常用语法.md","ref":"Markdown/LaTex常用语法.md","articles":[]}]},"previous":{"title":"GitFlow 工作流","level":"1.4.3","depth":2,"path":"Git/GitFlow工作流.md","ref":"Git/GitFlow工作流.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Git/Git规范.md","mtime":"2020-11-28T02:27:15.076Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-28T02:36:29.726Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

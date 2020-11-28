@@ -1,4 +1,4 @@
-# Linux常用软件
+# Linux 常用软件
 
 ## VIM
 
@@ -112,4 +112,3 @@ sudo vi /etc/proxychains.conf
 ```ini
 socks5 127.0.0.1 10808
 ```
-

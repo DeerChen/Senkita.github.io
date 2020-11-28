@@ -1,4 +1,4 @@
-# Git常用操作
+# Git 常用操作
 
 ## 配置文件
 
@@ -19,7 +19,7 @@ Host gitee
 
 Host github
 	Hostname github.com
-	
+
 	# SOCKS代理
     # ProxyCommand connect -S localhost:10808 %h %p
 
@@ -28,7 +28,7 @@ Host github
     IdentityFile ~/.ssh/github_ed25519
 ```
 
-## 自建Git服务器
+## 自建 Git 服务器
 
 ```bash
 # 服务器初始化

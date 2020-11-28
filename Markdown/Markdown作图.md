@@ -1,4 +1,4 @@
-# Markdown作图
+# Markdown 作图
 
 ## Mermaid
 
@@ -6,7 +6,7 @@
 
 `graph`是声明流程图，`T`是上，`B`和`D`是下，`L`是左，`R`是右
 
-~~~markdown
+````markdown
 ```mermaid
     graph TD
 
@@ -24,11 +24,11 @@
     D ==粗线指向==> F
     A ==> F
 ```
-~~~
+````
 
 ### 时序图
 
-~~~markdown
+````markdown
 ```mermaid
     sequenceDiagram
         Github ->> Local: fetch/clone
@@ -53,11 +53,11 @@
             end
         end
 ```
-~~~
+````
 
 ### 甘特图
 
-~~~markdown
+````markdown
 ```mermaid
     gantt
     dateFormat  YYYY-MM-DD
@@ -75,30 +75,30 @@
                 压力测试: after funcTest , 20h
                 测试报告: 48h
 ```
-~~~
+````
 
 ### 类图
 
 `<|--`是继承，`+`是公有，`-`是私有
 
-~~~markdown
+````markdown
 ```mermaid
     classDiagram
           Animal |>-- Person
 
           Animal : +int age
           Animal: +run()
-    
+
           class Person{
               +String name
               +say()
           }
 ```
-~~~
+````
 
 ### 饼图
 
-~~~markdown
+````markdown
 ```mermaid
     pie
         title Vote 2020
@@ -107,11 +107,11 @@
         "Jo Jorgensen": 1.2
         "Others": 0.6
 ```
-~~~
+````
 
 ## 标准流程图
 
-~~~markdown
+````markdown
 ```flow
     st=>start: 开始框
     op=>operation: 处理框
@@ -124,11 +124,11 @@
     cond(true)->io->e
     cond(false)->sub1(right)->op
 ```
-~~~
+````
 
 ## 标准时序图
 
-~~~markdown
+````markdown
 ```sequence
 	Title: 标题
 
@@ -145,4 +145,4 @@
     A -> B: Hello, how are you?
     B --> A: I'm fine, thank you, and you?
 ```
-~~~
+````
