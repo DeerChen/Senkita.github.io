@@ -28,8 +28,8 @@
 
 ### 时序图
 
-```markdown
-​```mermaid
+~~~markdown
+```mermaid
     sequenceDiagram
         Github ->> Local: fetch/clone
         Local -->> Github: push
@@ -52,13 +52,13 @@
                 Local -->> A: 没呢还
             end
         end
-​```
 ```
+~~~
 
 ### 甘特图
 
-```markdown
-​```mermaid
+~~~markdown
+```mermaid
     gantt
     dateFormat  YYYY-MM-DD
             title 软件开发
@@ -74,45 +74,45 @@
                 功能测试: active, funcTest, after des3, 3d
                 压力测试: after funcTest , 20h
                 测试报告: 48h
-​```
 ```
+~~~
 
 ### 类图
 
 `<|--`是继承，`+`是公有，`-`是私有
 
-```markdown
-​```mermaid
+~~~markdown
+```mermaid
     classDiagram
           Animal |>-- Person
 
           Animal : +int age
           Animal: +run()
-
+    
           class Person{
               +String name
               +say()
           }
-​```
 ```
+~~~
 
 ### 饼图
 
-```markdown
-​```mermaid
+~~~markdown
+```mermaid
     pie
         title Vote 2020
         "Joe Biden": 51.1
         "Donald Trump": 47.2
         "Jo Jorgensen": 1.2
         "Others": 0.6
-​```
 ```
+~~~
 
 ## 标准流程图
 
-```markdown
-​```flow
+~~~markdown
+```flow
     st=>start: 开始框
     op=>operation: 处理框
     cond=>condition: 判断框
@@ -123,13 +123,13 @@
     st(right)->op->cond
     cond(true)->io->e
     cond(false)->sub1(right)->op
-​```
 ```
+~~~
 
 ## 标准时序图
 
-```markdown
-​```sequence
+~~~markdown
+```sequence
 	Title: 标题
 
     Github ->> Local: fetch/clone
@@ -144,5 +144,5 @@
 
     A -> B: Hello, how are you?
     B --> A: I'm fine, thank you, and you?
-​```
 ```
+~~~

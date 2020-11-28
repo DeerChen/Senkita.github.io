@@ -396,7 +396,7 @@
 <span class="hljs-code">```</span>
 </code></pre>
 <h3 id="&#x65F6;&#x5E8F;&#x56FE;">&#x65F6;&#x5E8F;&#x56FE;</h3>
-<pre><code class="lang-markdown">&#x200B;<span class="hljs-code">```</span>mermaid
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>mermaid
 <span class="hljs-code">    sequenceDiagram</span>
 <span class="hljs-code">        Github -&gt;&gt; Local: fetch/clone</span>
 <span class="hljs-code">        Local --&gt;&gt; Github: push</span>
@@ -419,96 +419,84 @@
 <span class="hljs-code">                Local --&gt;&gt; A: &#x6CA1;&#x5462;&#x8FD8;</span>
 <span class="hljs-code">            end</span>
 <span class="hljs-code">        end</span>
-&#x200B;
+<span class="hljs-code">```</span>
 </code></pre>
-<pre><code>
-### &#x7518;&#x7279;&#x56FE;
+<h3 id="&#x7518;&#x7279;&#x56FE;">&#x7518;&#x7279;&#x56FE;</h3>
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>mermaid
+<span class="hljs-code">    gantt</span>
+<span class="hljs-code">    dateFormat  YYYY-MM-DD</span>
+<span class="hljs-code">            title &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;</span>
+<span class="hljs-code">            section &#x8BBE;&#x8BA1;</span>
+<span class="hljs-code">                &#x9700;&#x6C42;: done,   Need,      2020-01-01,      2020-01-03</span>
+<span class="hljs-code">                &#x539F;&#x578B;: active, Prototype, 2020-01-03,      3d</span>
+<span class="hljs-code">                UI&#x8BBE;&#x8BA1;:       Draft,     after Prototype, 5d</span>
+<span class="hljs-code">            section &#x5F00;&#x53D1;</span>
+<span class="hljs-code">                &#x7406;&#x89E3;&#x9700;&#x6C42;: crit, done,   2020-01-01,      24h</span>
+<span class="hljs-code">                &#x8BBE;&#x8BA1;&#x6846;&#x67B6;: crit, done,   after Prototype, 2d</span>
+<span class="hljs-code">                &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;: crit, active, 3d</span>
+<span class="hljs-code">            section &#x6D4B;&#x8BD5;</span>
+<span class="hljs-code">                &#x529F;&#x80FD;&#x6D4B;&#x8BD5;: active, funcTest, after des3, 3d</span>
+<span class="hljs-code">                &#x538B;&#x529B;&#x6D4B;&#x8BD5;: after funcTest , 20h</span>
+<span class="hljs-code">                &#x6D4B;&#x8BD5;&#x62A5;&#x544A;: 48h</span>
+<span class="hljs-code">```</span>
+</code></pre>
+<h3 id="&#x7C7B;&#x56FE;">&#x7C7B;&#x56FE;</h3>
+<p><code>&lt;|--</code>&#x662F;&#x7EE7;&#x627F;&#xFF0C;<code>+</code>&#x662F;&#x516C;&#x6709;&#xFF0C;<code>-</code>&#x662F;&#x79C1;&#x6709;</p>
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>mermaid
+<span class="hljs-code">    classDiagram</span>
+<span class="hljs-code">          Animal |&gt;-- Person</span>
 
-```markdown
-&#x200B;```mermaid
-    gantt
-    dateFormat  YYYY-MM-DD
-            title &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;
-            section &#x8BBE;&#x8BA1;
-                &#x9700;&#x6C42;: done,   Need,      2020-01-01,      2020-01-03
-                &#x539F;&#x578B;: active, Prototype, 2020-01-03,      3d
-                UI&#x8BBE;&#x8BA1;:       Draft,     after Prototype, 5d
-            section &#x5F00;&#x53D1;
-                &#x7406;&#x89E3;&#x9700;&#x6C42;: crit, done,   2020-01-01,      24h
-                &#x8BBE;&#x8BA1;&#x6846;&#x67B6;: crit, done,   after Prototype, 2d
-                &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;: crit, active, 3d
-            section &#x6D4B;&#x8BD5;
-                &#x529F;&#x80FD;&#x6D4B;&#x8BD5;: active, funcTest, after des3, 3d
-                &#x538B;&#x529B;&#x6D4B;&#x8BD5;: after funcTest , 20h
-                &#x6D4B;&#x8BD5;&#x62A5;&#x544A;: 48h
-&#x200B;
-</code></pre><pre><code>
-### &#x7C7B;&#x56FE;
+<span class="hljs-code">          Animal : +int age</span>
+<span class="hljs-code">          Animal: +run()</span>
 
-`&lt;|--`&#x662F;&#x7EE7;&#x627F;&#xFF0C;`+`&#x662F;&#x516C;&#x6709;&#xFF0C;`-`&#x662F;&#x79C1;&#x6709;
+<span class="hljs-code">          class Person{</span>
+<span class="hljs-code">              +String name</span>
+<span class="hljs-code">              +say()</span>
+<span class="hljs-code">          }</span>
+<span class="hljs-code">```</span>
+</code></pre>
+<h3 id="&#x997C;&#x56FE;">&#x997C;&#x56FE;</h3>
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>mermaid
+<span class="hljs-code">    pie</span>
+<span class="hljs-code">        title Vote 2020</span>
+<span class="hljs-code">        &quot;Joe Biden&quot;: 51.1</span>
+<span class="hljs-code">        &quot;Donald Trump&quot;: 47.2</span>
+<span class="hljs-code">        &quot;Jo Jorgensen&quot;: 1.2</span>
+<span class="hljs-code">        &quot;Others&quot;: 0.6</span>
+<span class="hljs-code">```</span>
+</code></pre>
+<h2 id="&#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;">&#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;</h2>
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>flow
+<span class="hljs-code">    st=&gt;start: &#x5F00;&#x59CB;&#x6846;</span>
+<span class="hljs-code">    op=&gt;operation: &#x5904;&#x7406;&#x6846;</span>
+<span class="hljs-code">    cond=&gt;condition: &#x5224;&#x65AD;&#x6846;</span>
+<span class="hljs-code">    sub1=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;</span>
+<span class="hljs-code">    io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;</span>
+<span class="hljs-code">    e=&gt;end: &#x7ED3;&#x675F;&#x6846;</span>
 
-```markdown
-&#x200B;```mermaid
-    classDiagram
-          Animal |&gt;-- Person
+<span class="hljs-code">    st(right)-&gt;op-&gt;cond</span>
+<span class="hljs-code">    cond(true)-&gt;io-&gt;e</span>
+<span class="hljs-code">    cond(false)-&gt;sub1(right)-&gt;op</span>
+<span class="hljs-code">```</span>
+</code></pre>
+<h2 id="&#x6807;&#x51C6;&#x65F6;&#x5E8F;&#x56FE;">&#x6807;&#x51C6;&#x65F6;&#x5E8F;&#x56FE;</h2>
+<pre><code class="lang-markdown"><span class="hljs-code">```</span>sequence
+<span class="hljs-code">    Title: &#x6807;&#x9898;</span>
 
-          Animal : +int age
-          Animal: +run()
+<span class="hljs-code">    Github -&gt;&gt; Local: fetch/clone</span>
+<span class="hljs-code">    Local --&gt;&gt; Github: push</span>
 
-          class Person{
-              +String name
-              +say()
-          }
-&#x200B;
-</code></pre><pre><code>
-### &#x997C;&#x56FE;
+<span class="hljs-code">    Note left of Github: &#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</span>
+<span class="hljs-code">    Note right of Local: &#x672C;&#x5730;&#x4ED3;&#x5E93;</span>
+<span class="hljs-code">    Note over Github, Local: Git</span>
 
-```markdown
-&#x200B;```mermaid
-    pie
-        title Vote 2020
-        &quot;Joe Biden&quot;: 51.1
-        &quot;Donald Trump&quot;: 47.2
-        &quot;Jo Jorgensen&quot;: 1.2
-        &quot;Others&quot;: 0.6
-&#x200B;
-</code></pre><pre><code>
-## &#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;
+<span class="hljs-code">    participant A</span>
+<span class="hljs-code">    participant B</span>
 
-```markdown
-&#x200B;```flow
-    st=&gt;start: &#x5F00;&#x59CB;&#x6846;
-    op=&gt;operation: &#x5904;&#x7406;&#x6846;
-    cond=&gt;condition: &#x5224;&#x65AD;&#x6846;
-    sub1=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;
-    io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;
-    e=&gt;end: &#x7ED3;&#x675F;&#x6846;
-
-    st(right)-&gt;op-&gt;cond
-    cond(true)-&gt;io-&gt;e
-    cond(false)-&gt;sub1(right)-&gt;op
-&#x200B;
-</code></pre><pre><code>
-## &#x6807;&#x51C6;&#x65F6;&#x5E8F;&#x56FE;
-
-```markdown
-&#x200B;```sequence
-    Title: &#x6807;&#x9898;
-
-    Github -&gt;&gt; Local: fetch/clone
-    Local --&gt;&gt; Github: push
-
-    Note left of Github: &#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
-    Note right of Local: &#x672C;&#x5730;&#x4ED3;&#x5E93;
-    Note over Github, Local: Git
-
-    participant A
-    participant B
-
-    A -&gt; B: Hello, how are you?
-    B --&gt; A: I&apos;m fine, thank you, and you?
-&#x200B;
-</code></pre><p>```</p>
+<span class="hljs-code">    A -&gt; B: Hello, how are you?</span>
+<span class="hljs-code">    B --&gt; A: I&apos;m fine, thank you, and you?</span>
+<span class="hljs-code">```</span>
+</code></pre>
 
                                 
                                 </section>
@@ -552,7 +540,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Markdown作图","level":"1.5.2","depth":2,"next":{"title":"LaTex常用语法","level":"1.5.3","depth":2,"path":"Markdown/LaTex常用语法.md","ref":"Markdown/LaTex常用语法.md","articles":[]},"previous":{"title":"Markdown基础语法","level":"1.5.1","depth":2,"path":"Markdown/Markdown基础语法.md","ref":"Markdown/Markdown基础语法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Markdown/Markdown作图.md","mtime":"2020-11-27T10:00:13.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-27T11:37:47.540Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Markdown作图","level":"1.5.2","depth":2,"next":{"title":"LaTex常用语法","level":"1.5.3","depth":2,"path":"Markdown/LaTex常用语法.md","ref":"Markdown/LaTex常用语法.md","articles":[]},"previous":{"title":"Markdown基础语法","level":"1.5.1","depth":2,"path":"Markdown/Markdown基础语法.md","ref":"Markdown/Markdown基础语法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Markdown/Markdown作图.md","mtime":"2020-11-28T01:38:44.804Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-28T01:42:53.283Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
