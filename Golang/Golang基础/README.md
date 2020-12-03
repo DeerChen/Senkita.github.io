@@ -49,3 +49,27 @@ go help
 # 查看版本号
 go version
 ```
+
+## 时间
+
+```go
+package main
+
+import "time"
+
+func main() {
+	// 当前时间
+	/*
+	  年：now.Year() 月：now.Month() 日：now.Day()
+	  时：now.Hour() 分：now.Minute() 秒：now.Second()
+	  时间戳：now.Unix()或now.UnixNano()
+	*/
+	/*
+	  纳秒：time.Nanosecond 微秒：time.Microsecond 毫秒：time.Millisecond
+	  秒：time.Second 分：time.Minute 时：time.Hour
+	*/
+	now := time.Now()
+	// 格式化时间，数字固定
+	now.Format("2006-01-02 15:04:05")
+}
+```
