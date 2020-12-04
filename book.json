@@ -1,0 +1,76 @@
+{
+    "author": "Senkita",
+    "description": "某乱点技能树。",
+    "language": "zh-hans",
+    "plugins": [
+        "-sharing",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "sharing-plus",
+        "expandable-chapters-small",
+        "terminull",
+        "tbfed-pagefooter",
+        "splitter",
+        "edit-link",
+        "sitemap-general",
+        "todo",
+        "copy-code-button",
+        "klipse",
+        "alerts",
+        "mermaid-gb3",
+        "anchors",
+        "anchor-navigation-ex",
+        "mathjax-pro"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "&copy Senkita",
+            "modify_label": "本页面最新修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "edit-link": {
+            "base": "https://github.com/Senkita/Senkita.github.io/edit/main",
+            "label": "Edit This Page"
+        },
+        "sitemap-general": {
+            "prefix": "https://Senkita.github.io/"
+        },
+        "anchor-navigation-ex": {
+            "isRewritePageTitle": true,
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook",
+                "google",
+                "twitter",
+                "weibo",
+                "instapaper",
+                "linkedin",
+                "pocket",
+                "stumbleupon"
+            ]
+        }
+    }
+}

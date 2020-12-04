@@ -2,8 +2,8 @@
 
 ## Sudo
 
-```bash
-sudo vi /etc/sudoers
+```term
+$ sudo vi /etc/sudoers
 ```
 
 ```ini
@@ -14,8 +14,8 @@ root ALL=(ALL:NOPASSWD) ALL
 
 ## 改源
 
-```bash
-sudo vi /etc/apt/sources.list
+```term
+$ sudo vi /etc/apt/sources.list
 ```
 
 ### Debian

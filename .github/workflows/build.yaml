@@ -12,6 +12,10 @@ jobs:
     main-to-gh-pages:
         runs-on: ubuntu-latest
 
+        strategy:
+            matrix:
+                node-version: [10.x]
+
         steps:
             - name: checkout main
               uses: actions/checkout@v2
@@ -20,20 +24,25 @@ jobs:
 
             - name: install Node.js
               uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
 
             - name: configure Gitbook
               run: |
                   npm install -g gitbook-cli
+                  npm install
+                  gitbook install
 
             - name: generate _book folder
               run: |
+                  mv .github/conf/mj-single.js node_modules/mathjax-node/lib/
                   gitbook build
 
             - name: push _book to branch gh-pages
               env:
                   TOKEN: ${{ secrets.TOKEN }}
                   REF: github.com/${{github.repository}}
-                  EMAIL: 2023487+Senkita@user.noreply.gitee.com
+                  EMAIL: Senkita@163.com
                   NAME: ${{github.repository_owner}}
               run: |
                   cd _book

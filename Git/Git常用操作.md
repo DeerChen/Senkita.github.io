@@ -30,9 +30,7 @@ Host github
 
 ## 自建 Git 服务器
 
-```bash
-# 服务器初始化
-git init --bare demo.git
-# 赋权
-chown -R root:root demo.git
+```term
+$ git init --bare demo.git # 服务器初始化
+$ chown -R root:root demo.git # 赋权
 ```

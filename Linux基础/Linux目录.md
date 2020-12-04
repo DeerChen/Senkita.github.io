@@ -1,6 +1,7 @@
 # Linux 目录
 
-```bash
+```term
+$ tree / -L 1
 /
 ├── bin：(binaries)保存系统命令，所有用户都可执行
 ├── boot：系统启动目录

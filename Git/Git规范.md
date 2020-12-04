@@ -2,8 +2,8 @@
 
 ## Commit Message
 
-```bash
-git commit # 打开提交信息文档进行编辑
+```term
+$ git commit # 打开提交信息文档进行编辑
 ```
 
 ### 提交信息文档
@@ -75,15 +75,10 @@ resolves #110, #120, #119
 
 ### commitizen
 
-```bash
-# 安装
-npm install -g commitizen cz-conventional-changelog
-
-# 使项目支持Angular的Gommit Message规范
-commitizen init cz-conventional-changelog --save --save-exact
-
-# 替代git commit
-git cz
+```term
+$ npm install -g commitizen cz-conventional-changelog # 安装
+$ commitizen init cz-conventional-changelog --save --save-exact # 使项目支持Angular的Gommit Message规范
+$ git cz # 替代git commit
 ```
 
 #### ~/.czrc
@@ -96,21 +91,17 @@ git cz
 
 ### cz-conventional-changelog
 
-```bash
-# 安装
-npm install -g cz-conventional-changelog
-
-# 生成Change Log
-conventional-changelog -p angular -i CHANGELOG.md -w -r 0 # -p是指定规范，-i是指定文件名，-w是覆写，-r是生成全部
+```term
+$ npm install -g cz-conventional-changelog # 安装
+$ conventional-changelog -p angular -i CHANGELOG.md -w -r 0 # 生成Change Log，-p是指定规范，-i是指定文件名，-w是覆写，-r是生成全部
 ```
 
 ### commitlint 和 husky
 
 `commitlint`提供格式校验，`husky`提供更易用的`git hook`
 
-```bash
-# 安装
-npm i -D husky @commitlint/config-conventional @commitlint/cli
+```term
+$ npm i -D husky @commitlint/config-conventional @commitlint/cli # 安装
 ```
 
 #### packages.json

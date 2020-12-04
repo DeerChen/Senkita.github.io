@@ -4,7 +4,8 @@
 
 ## 配置文件
 
-```bash
+```term
+$ tree /etc -L 1
 /etc/
 ├── passwd：保存用户信息
 ├── shadow：保存密码
@@ -43,38 +44,21 @@ root:*::
 
 ## 常用命令
 
-```bash
-# 查看当前用户
-whoami
-id demo # 查看指定用户的UID和GID
-# 查看当前用户组
-groups
-
-# 退出用户
-exit root
-# 切换用户
-su root
-
-# 添加用户
-useradd -u 500 -g sys -c "demo" demo # -u是指定UID，-g是指定用户组，-c是用户描述
-useradd -G sys,root demo # -G是指定多个用户组
-# 修改密码
-passwd demo
-# 查看密码状态
-passwd -S demo # 仅root可用
-
-# user modify修改用户
-usermod -g sys # -g是指定组
-# user delete删除用户
-# 删除用户时，如同名初始组为空，会一并删除同名初始组
-userdel -r demo # -r是删除用户同时删除用户主目录
-
-# 添加组
-groupadd -g 1024 demo
-# 修改组名
-groupmod -n newGroup oldGroup
-# 删除组
-groupdel -g 1024
+```term
+$ whoami # 查看当前用户
+$ id demo # 查看指定用户的UID和GID
+$ groups # 查看当前用户组
+$ exit root # 退出用户
+$ su root # 切换用户
+$ useradd -u 500 -g sys -c "demo" demo # 添加用户，-u是指定UID，-g是指定用户组，-c是用户描述
+$ useradd -G sys,root demo # -G是指定多个用户组
+$ passwd demo # 修改密码
+$ passwd -S demo # 查看密码状态，仅root可用
+$ usermod -g sys # user modify修改用户，-g是指定组
+$ userdel -r demo # user delete删除用户，删除用户时，如同名初始组为空，会一并删除同名初始组，-r是删除用户同时删除用户主目录
+$ groupadd -g 1024 demo # 添加组
+$ groupmod -n newGroup oldGroup # 修改组名
+$ groupdel -g 1024 # 删除组
 ```
 
 ## 专题讨论
