@@ -42,7 +42,7 @@ jobs:
               env:
                   TOKEN: ${{ secrets.TOKEN }}
                   REF: github.com/${{github.repository}}
-                  EMAIL: Senkita@163.com
+                  EMAIL: 42566210+Senkita@users.noreply.github.com
                   NAME: ${{github.repository_owner}}
               run: |
                   cd _book
