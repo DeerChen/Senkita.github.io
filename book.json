@@ -4,9 +4,12 @@
     "language": "zh-hans",
     "plugins": [
         "-sharing",
+        "-highlight",
         "-lunr",
         "-search",
         "search-pro",
+        "prism",
+        "prism-themes",
         "sharing-plus",
         "expandable-chapters-small",
         "terminull",
@@ -28,6 +31,20 @@
             "copyright": "&copy Senkita",
             "modify_label": "本页面最新修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "prism": {
+            "css": ["prism-themes/themes/prism-atom-dark.css"],
+            "lang": {
+                "flow": "typescript"
+            },
+            "ignore": [
+                "mermaid",
+                "eval-js",
+                "eval-python",
+                "eval-cpp",
+                "eval-scheme",
+                "eval-php"
+            ]
         },
         "edit-link": {
             "base": "https://github.com/Senkita/Senkita.github.io/edit/main",

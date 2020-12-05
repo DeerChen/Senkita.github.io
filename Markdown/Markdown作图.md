@@ -111,7 +111,7 @@
 
 ## 标准流程图
 
-````markdown
+<pre>
 ```flow
     st=>start: 开始框
     op=>operation: 处理框
@@ -124,11 +124,11 @@
     cond(true)->io->e
     cond(false)->sub1(right)->op
 ```
-````
+</pre>
 
 ## 标准时序图
 
-````markdown
+<pre>
 ```sequence
 	Title: 标题
 
@@ -145,4 +145,4 @@
     A -> B: Hello, how are you?
     B --> A: I'm fine, thank you, and you?
 ```
-````
+</pre>

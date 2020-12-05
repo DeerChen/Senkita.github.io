@@ -14,28 +14,16 @@
 
 `DOS`是磁盘操作系统(`Disk Operating System`)
 
-```PowerShell
-# 查看当前目录
-dir
-# 切换目录
-cd ..
-
-# 新建目录make directory
-md newDir
-# 删除目录
-rd newDir
-
-# 复制
-copy demo.txt .
-# 移动
-move demo.txt .
-# 删除
-del demo.txt
-
-# 清屏
-clr
-# 退出
-exit
+```term
+$ dir # 查看当前目录
+$ cd .. # 切换目录
+$ md newDir # 新建目录make directory
+$ rd newDir # 删除目录
+$ copy demo.txt . # 复制
+$ move demo.txt . # 移动
+$ del demo.txt # 删除
+$ clr # 清屏
+$ exit # 退出
 ```
 
 ## 进制
