@@ -3,7 +3,7 @@
  * @Author: Senkita
  * @Date: 2020-12-05 09:40:31
  * @LastEditors: Senkita
- * @LastEditTime: 2020-12-05 12:36:59
+ * @LastEditTime: 2020-12-05 13:12:58
  */
 var moment = require('moment');
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
         'page:before': function (page) {
             var _label = 'File Modify: ',
                 _format = 'YYYY-MM-DD HH:mm:ss',
-                _copy = 'powered by Senkita';
+                _copy = 'Powered by Senkita';
             if (this.options.pluginsConfig['tbfed-pagefooter']) {
                 _label =
                     this.options.pluginsConfig['tbfed-pagefooter'][
