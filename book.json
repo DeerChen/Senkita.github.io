@@ -42,6 +42,9 @@
             "modify_label": "本页面最新修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
+        "baidu-tongji": {
+            "token": "b20309f6bcf32f5244e20b90ceb16199"
+        },
         "prism": {
             "css": ["prism-themes/themes/prism-atom-dark.css"],
             "lang": {

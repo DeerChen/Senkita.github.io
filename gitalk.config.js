@@ -3,7 +3,7 @@
  * @Author: Senkita
  * @Date: 2020-12-05 12:37:25
  * @LastEditors: Senkita
- * @LastEditTime: 2020-12-05 13:15:03
+ * @LastEditTime: 2020-12-05 13:25:53
  */
 var gitalk = new Gitalk({
     clientID: 'f0f98821d62b7d082757',
@@ -11,8 +11,7 @@ var gitalk = new Gitalk({
     repo: 'Senkita.github.io',
     owner: 'Senkita',
     admin: ['Senkita'],
-    id: window.location.pathname,
-    title: 'Comment',
+    id: decodeURI(window.location.pathname),
     distractionFreeMode: false,
 });
 gitalk.render('gitalk-container');
