@@ -24,9 +24,33 @@
         "mermaid-gb3",
         "anchors",
         "anchor-navigation-ex",
-        "mathjax-pro"
+        "mathjax-pro",
+        "donate",
+        "github-buttons"
     ],
     "pluginsConfig": {
+        "donate": {
+            "wechat": "https://s3.ax1x.com/2020/12/05/DLeFsS.png",
+            "button": "打赏？",
+            "wechatText": "微信捐赠"
+        },
+        "github-buttons": {
+            "buttons": [
+                {
+                    "user": "Senkita",
+                    "repo": "Senkita.github.io",
+                    "type": "star",
+                    "count": true,
+                    "size": "small"
+                },
+                {
+                    "user": "Senkita",
+                    "type": "follow",
+                    "width": "230",
+                    "count": true
+                }
+            ]
+        },
         "tbfed-pagefooter": {
             "copyright": "&copy Senkita",
             "modify_label": "本页面最新修订时间：",
@@ -48,7 +72,7 @@
         },
         "edit-link": {
             "base": "https://github.com/Senkita/Senkita.github.io/edit/main",
-            "label": "Edit This Page"
+            "label": "编辑"
         },
         "sitemap-general": {
             "prefix": "https://Senkita.github.io/"
