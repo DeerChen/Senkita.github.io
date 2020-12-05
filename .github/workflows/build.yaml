@@ -34,7 +34,7 @@ jobs:
                   gitbook install
 
                   mv .github/conf/mj-single.js node_modules/mathjax-node/lib/
-                  mv .github/conf/index.js node_modules\gitbook-plugin-tbfed-pagefooter\index.js
+                  mv .github/conf/index.js node_modules/gitbook-plugin-tbfed-pagefooter/
 
             - name: generate _book folder
               run: |

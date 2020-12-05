@@ -30,9 +30,12 @@
     ],
     "pluginsConfig": {
         "donate": {
-            "wechat": "https://s3.ax1x.com/2020/12/05/DLeFsS.png",
-            "button": "打赏？",
+            "wechat": "https://s3.ax1x.com/2020/12/05/DL8ov9.png",
+            "button": "打赏",
             "wechatText": "微信捐赠"
+        },
+        "github": {
+            "url": "https://github.com/Senkita/Senkita.github.io"
         },
         "github-buttons": {
             "buttons": [
