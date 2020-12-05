@@ -26,7 +26,8 @@
         "anchor-navigation-ex",
         "mathjax-pro",
         "donate",
-        "github"
+        "github",
+        "baidu-tongji"
     ],
     "pluginsConfig": {
         "donate": {
