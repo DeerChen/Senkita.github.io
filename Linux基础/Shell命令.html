@@ -1,0 +1,1718 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Shell 命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Senkita">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminull/terminull.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Linux用户权限.html" />
+    
+    
+    <link rel="prev" href="Linux目录.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    全栈养成计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Linux 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Linux目录.html">
+            
+                <a href="Linux目录.html">
+            
+                    
+                    Linux 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="Shell命令.html">
+            
+                <a href="Shell命令.html">
+            
+                    
+                    Shell 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Linux用户权限.html">
+            
+                <a href="Linux用户权限.html">
+            
+                    
+                    Linux 用户权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Linux常用软件.html">
+            
+                <a href="Linux常用软件.html">
+            
+                    
+                    Linux 常用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Linux常用配置.html">
+            
+                <a href="Linux常用配置.html">
+            
+                    
+                    Linux 常用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Git/">
+            
+                <a href="../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Git/Git常用命令.html">
+            
+                <a href="../Git/Git常用命令.html">
+            
+                    
+                    Git 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Git/Git常用操作.html">
+            
+                <a href="../Git/Git常用操作.html">
+            
+                    
+                    Git 常用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Git/GitFlow工作流.html">
+            
+                <a href="../Git/GitFlow工作流.html">
+            
+                    
+                    GitFlow 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Git/Git规范.html">
+            
+                <a href="../Git/Git规范.html">
+            
+                    
+                    Git 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Git/持续集成.html">
+            
+                <a href="../Git/持续集成.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Markdown/">
+            
+                <a href="../Markdown/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Markdown/Markdown基础语法.html">
+            
+                <a href="../Markdown/Markdown基础语法.html">
+            
+                    
+                    Markdown 基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Markdown/Markdown作图.html">
+            
+                <a href="../Markdown/Markdown作图.html">
+            
+                    
+                    Markdown 作图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Markdown/LaTex常用语法.html">
+            
+                <a href="../Markdown/LaTex常用语法.html">
+            
+                    
+                    LaTex 常用语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../前端/">
+            
+                <a href="../前端/">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../前端/HTML5+CSS3/">
+            
+                <a href="../前端/HTML5+CSS3/">
+            
+                    
+                    HTML5+CSS3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../前端/HTML5+CSS3/HTML5基础.html">
+            
+                <a href="../前端/HTML5+CSS3/HTML5基础.html">
+            
+                    
+                    HTML5 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../前端/HTML5+CSS3/CSS3基础.html">
+            
+                <a href="../前端/HTML5+CSS3/CSS3基础.html">
+            
+                    
+                    CSS3 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../前端/HTML5+CSS3/响应式设计.html">
+            
+                <a href="../前端/HTML5+CSS3/响应式设计.html">
+            
+                    
+                    响应式设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../前端/HTML5+CSS3/弹性盒子模型.html">
+            
+                <a href="../前端/HTML5+CSS3/弹性盒子模型.html">
+            
+                    
+                    弹性盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="../前端/HTML5+CSS3/网格布局.html">
+            
+                <a href="../前端/HTML5+CSS3/网格布局.html">
+            
+                    
+                    网格布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="../前端/HTML5+CSS3/多列布局.html">
+            
+                <a href="../前端/HTML5+CSS3/多列布局.html">
+            
+                    
+                    多列布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../前端/JavaScript/">
+            
+                <a href="../前端/JavaScript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../前端/JavaScript/JavaScript基础.html">
+            
+                <a href="../前端/JavaScript/JavaScript基础.html">
+            
+                    
+                    JavaScript 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../前端/JavaScript/ES6.html">
+            
+                <a href="../前端/JavaScript/ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../前端/JavaScript/正则表达式.html">
+            
+                <a href="../前端/JavaScript/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../前端/JavaScript/面向对象编程.html">
+            
+                <a href="../前端/JavaScript/面向对象编程.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../前端/JavaScript/函数式编程.html">
+            
+                <a href="../前端/JavaScript/函数式编程.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../前端/Vue/">
+            
+                <a href="../前端/Vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../前端/Vue/Vue项目结构.html">
+            
+                <a href="../前端/Vue/Vue项目结构.html">
+            
+                    
+                    Vue 项目结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../前端/Vue/setup与ref.html">
+            
+                <a href="../前端/Vue/setup与ref.html">
+            
+                    
+                    setup 与 ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../前端/Vue/reactive与TypeScript类型.html">
+            
+                <a href="../前端/Vue/reactive与TypeScript类型.html">
+            
+                    
+                    reactive 与 TypeScript 类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../前端/Vue/computed、watch与watchEffect.html">
+            
+                <a href="../前端/Vue/computed、watch与watchEffect.html">
+            
+                    
+                    computed、watch 与 watchEffect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Golang/">
+            
+                <a href="../Golang/">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Golang/Golang基础/">
+            
+                <a href="../Golang/Golang基础/">
+            
+                    
+                    Golang 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../Golang/Golang基础/变量、常量、类型与运算符.html">
+            
+                <a href="../Golang/Golang基础/变量、常量、类型与运算符.html">
+            
+                    
+                    变量、常量、类型与运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../Golang/Golang基础/流程控制.html">
+            
+                <a href="../Golang/Golang基础/流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../Golang/Golang基础/函数.html">
+            
+                <a href="../Golang/Golang基础/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../Golang/Golang基础/复合类型.html">
+            
+                <a href="../Golang/Golang基础/复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../Golang/Golang基础/面向对象.html">
+            
+                <a href="../Golang/Golang基础/面向对象.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../Golang/Golang基础/类型断言.html">
+            
+                <a href="../Golang/Golang基础/类型断言.html">
+            
+                    
+                    类型断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../Golang/Golang基础/异常处理.html">
+            
+                <a href="../Golang/Golang基础/异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../Golang/Golang基础/文件处理.html">
+            
+                <a href="../Golang/Golang基础/文件处理.html">
+            
+                    
+                    文件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../Golang/Golang基础/反射机制.html">
+            
+                <a href="../Golang/Golang基础/反射机制.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Golang/Golang网络编程/">
+            
+                <a href="../Golang/Golang网络编程/">
+            
+                    
+                    Golang 网络编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../Golang/Golang网络编程/示例代码.html">
+            
+                <a href="../Golang/Golang网络编程/示例代码.html">
+            
+                    
+                    示例代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Golang/Golang专题/">
+            
+                <a href="../Golang/Golang专题/">
+            
+                    
+                    Golang 专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../Golang/Golang专题/开发环境配置与程序实体.html">
+            
+                <a href="../Golang/Golang专题/开发环境配置与程序实体.html">
+            
+                    
+                    开发环境配置与程序实体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../Golang/Golang专题/关于容器.html">
+            
+                <a href="../Golang/Golang专题/关于容器.html">
+            
+                    
+                    关于容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../Golang/Golang专题/通道与go语句.html">
+            
+                <a href="../Golang/Golang专题/通道与go语句.html">
+            
+                    
+                    通道与 go 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="../Golang/Golang专题/关于函数.html">
+            
+                <a href="../Golang/Golang专题/关于函数.html">
+            
+                    
+                    关于函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="../Golang/Golang专题/结构体与接口.html">
+            
+                <a href="../Golang/Golang专题/结构体与接口.html">
+            
+                    
+                    结构体与接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="../Golang/Golang专题/关于指针.html">
+            
+                <a href="../Golang/Golang专题/关于指针.html">
+            
+                    
+                    关于指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="../Golang/Golang专题/关于流程控制.html">
+            
+                <a href="../Golang/Golang专题/关于流程控制.html">
+            
+                    
+                    关于流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.8" data-path="../Golang/Golang专题/关于异常捕获.html">
+            
+                <a href="../Golang/Golang专题/关于异常捕获.html">
+            
+                    
+                    关于异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.9" data-path="../Golang/Golang专题/关于测试.html">
+            
+                <a href="../Golang/Golang专题/关于测试.html">
+            
+                    
+                    关于测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.10" data-path="../Golang/Golang专题/互斥锁、读写锁、条件变量与原子操作.html">
+            
+                <a href="../Golang/Golang专题/互斥锁、读写锁、条件变量与原子操作.html">
+            
+                    
+                    互斥锁、读写锁、条件变量与原子操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.11" data-path="../Golang/Golang专题/并发中的其它协程同步工具.html">
+            
+                <a href="../Golang/Golang专题/并发中的其它协程同步工具.html">
+            
+                    
+                    并发中的其它协程同步工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.12" data-path="../Golang/Golang专题/关于IO.html">
+            
+                <a href="../Golang/Golang专题/关于IO.html">
+            
+                    
+                    关于 IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Shell 命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#shell-&#x547D;&#x4EE4;"><b>1. </b>Shell &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E2E;&#x52A9;"><b>1.1. </b>&#x5E2E;&#x52A9;</a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x5904;&#x7406;"><b>1.2. </b>&#x6587;&#x4EF6;&#x5904;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;"><b>1.3. </b>&#x67E5;&#x770B;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x627E;"><b>1.4. </b>&#x67E5;&#x627E;</a></li><li><span class="title-icon "></span><a href="#&#x78C1;&#x76D8;&#x64CD;&#x4F5C;"><b>1.5. </b>&#x78C1;&#x76D8;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x538B;&#x7F29;"><b>1.6. </b>&#x89E3;&#x538B;&#x7F29;</a></li><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;"><b>1.7. </b>&#x7CFB;&#x7EDF;</a></li><li><span class="title-icon "></span><a href="#&#x7F51;&#x7EDC;"><b>1.8. </b>&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;"><b>1.9. </b>&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;"><b>1.9.1. </b>&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x6743;&#x9650;"><b>1.10. </b>&#x6587;&#x4EF6;&#x6743;&#x9650;</a></li></ul></ul></div><a href="#shell-&#x547D;&#x4EE4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="shell-&#x547D;&#x4EE4;"><a name="shell-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#shell-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Shell &#x547D;&#x4EE4;</h1>
+<h2 id="&#x5E2E;&#x52A9;"><a name="&#x5E2E;&#x52A9;" class="anchor-navigation-ex-anchor" href="#&#x5E2E;&#x52A9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5E2E;&#x52A9;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">man ls</span>
+           
+            <span class="terminullComment"># manual&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`man ls`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">help ls</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`help ls`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x6587;&#x4EF6;&#x5904;&#x7406;"><a name="&#x6587;&#x4EF6;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6587;&#x4EF6;&#x5904;&#x7406;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">cd .</span>
+           
+            <span class="terminullComment"># change directory&#x5207;&#x6362;&#x76EE;&#x5F55;&#xFF0C;.&#x662F;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#xFF0C;..&#x662F;&#x7236;&#x7EA7;&#x76EE;&#x5F55;&#xFF0C;~&#x662F;&#x4E3B;&#x76EE;&#x5F55;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`cd .`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ls -l -a -h</span>
+           
+            <span class="terminullComment"># list&#x5217;&#x51FA;&#xFF0C;-l&#x662F;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x5C55;&#x793A;&#xFF0C;-a&#x662F;&#x5305;&#x542B;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF0C;-h&#x662F;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x5355;&#x4F4D;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ls -l -a -h`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">pwd</span>
+           
+            <span class="terminullComment"># print working directory&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x76EE;&#x5F55;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`pwd`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">mkdir -p newDir</span>
+           
+            <span class="terminullComment"># make directory&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x5939;&#xFF0C;-p&#x662F;&#x5982;&#x679C;&#x7236;&#x76EE;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4E00;&#x5E76;&#x751F;&#x6210;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`mkdir -p newDir`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">touch README.md</span>
+           
+            <span class="terminullComment"># &#x65B0;&#x5EFA;&#x6587;&#x4EF6;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`touch README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">echo &apos;&apos; &gt;&gt; README.md</span>
+           
+            <span class="terminullComment"># &gt;&#x662F;&#x8986;&#x76D6;&#x5199;&#x5165;&#xFF0C;&gt;&gt;&#x662F;&#x8FFD;&#x52A0;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`echo &apos;&apos; &gt;&gt; README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">cp -r -p dir1/ dir2/</span>
+           
+            <span class="terminullComment"># copy&#x590D;&#x5236;&#xFF0C;-r&#x662F;&#x7528;&#x4E8E;&#x76EE;&#x5F55;&#x7684;&#x9012;&#x5F52;&#x590D;&#x5236;&#xFF0C;-p&#x662F;&#x4FDD;&#x7559;&#x539F;&#x6587;&#x4EF6;&#x5C5E;&#x6027;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`cp -r -p dir1/ dir2/`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">mv oldFile newFile</span>
+           
+            <span class="terminullComment"># move&#x79FB;&#x52A8;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`mv oldFile newFile`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">rm -rf dir/</span>
+           
+            <span class="terminullComment"># remove&#x5220;&#x9664;&#xFF0C;-r&#x662F;&#x7528;&#x4E8E;&#x76EE;&#x5F55;&#x7684;&#x9012;&#x5F52;&#x5220;&#x9664;(recursive)&#xFF0C;-f&#x662F;&#x5F3A;&#x5236;&#x5220;&#x9664;(force)</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`rm -rf dir/`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ln -s file1 link1</span>
+           
+            <span class="terminullComment"># link&#x521B;&#x5EFA;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;-s&#x662F;&#x521B;&#x5EFA;&#x8F6F;&#x94FE;&#x63A5;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ln -s file1 link1`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x67E5;&#x770B;"><a name="&#x67E5;&#x770B;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x67E5;&#x770B;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">cat README.md</span>
+           
+            <span class="terminullComment"># concatenate&#x663E;&#x793A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`cat README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">more README.md</span>
+           
+            <span class="terminullComment"># &#x5206;&#x9875;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x7A7A;&#x683C;&#x663E;&#x793A;&#x4E0B;&#x4E00;&#x9875;&#xFF0C;&#x56DE;&#x8F66;&#x663E;&#x793A;&#x4E0B;&#x4E00;&#x884C;&#xFF0C;q&#x9000;&#x51FA;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`more README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">head -n 5 README.md</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x5934;&#x51E0;&#x884C;&#xFF0C;-n&#x662F;&#x6307;&#x5B9A;&#x884C;&#x6570;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`head -n 5 README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">tail -n 20 README.md</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x540E;&#x51E0;&#x884C;&#xFF0C;-n&#x662F;&#x6307;&#x5B9A;&#x884C;&#x6570;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`tail -n 20 README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x67E5;&#x627E;"><a name="&#x67E5;&#x627E;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x627E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x67E5;&#x627E;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">find dir/ -name &quot;demo&quot; -size -204800</span>
+           
+            <span class="terminullComment"># -name&#x662F;&#x7CBE;&#x786E;&#x6309;&#x540D;&#x67E5;&#x627E;&#xFF0C;-size&#x662F;&#x6309;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;&#xFF0C;+&#x662F;&#x5927;&#x4E8E;&#xFF0C;-&#x662F;&#x5C0F;&#x4E8E;&#xFF0C;&#x4E0D;&#x5199;&#x662F;&#x7B49;&#x4E8E;&#xFF0C;&#x4EE5;block&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;1K=2block</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`find dir/ -name &quot;demo&quot; -size -204800`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">find dir/ -iname &quot;demo?&quot; -type f</span>
+           
+            <span class="terminullComment"># -iname&#x662F;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x6309;&#x540D;&#x67E5;&#x627E;&#xFF0C;*&#x662F;&#x5339;&#x914D;&#x6240;&#x6709;&#xFF0C;?&#x662F;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#xFF0C;-type&#x662F;&#x6309;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;&#xFF0C;f&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF0C;l&#x662F;&#x8F6F;&#x94FE;&#x63A5;&#x6587;&#x4EF6;&#xFF0C;d&#x662F;&#x76EE;&#x5F55;&#xFF0C;c&#x662F;&#x5B57;&#x7B26;&#x6587;&#x4EF6;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`find dir/ -iname &quot;demo?&quot; -type f`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">grep -v demo -i -n -c file1</span>
+           
+            <span class="terminullComment"># -v&#x662F;&#x53CD;&#x9009;&#xFF0C;-i&#x662F;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#xFF0C;-n&#x662F;&#x663E;&#x793A;&#x5339;&#x914D;&#x884C;&#x548C;&#x884C;&#x53F7;&#xFF0C;-c&#x662F;&#x8F93;&#x51FA;&#x5339;&#x914D;&#x884C;&#x6B21;&#x6570;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`grep -v demo -i -n -c file1`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">which ls</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x547D;&#x4EE4;&#x6240;&#x5728;&#x76EE;&#x5F55;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`which ls`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">whereis ls</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x547D;&#x4EE4;&#x53CA;&#x5176;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#x7684;&#x6240;&#x5728;&#x76EE;&#x5F55;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`whereis ls`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x78C1;&#x76D8;&#x64CD;&#x4F5C;"><a name="&#x78C1;&#x76D8;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x78C1;&#x76D8;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x78C1;&#x76D8;&#x64CD;&#x4F5C;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">df -h -m -a</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#xFF0C;-h&#x662F;(human-readable)&#x4EE5;&#x6613;&#x8BFB;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#xFF0C;-m&#x662F;&#x4EE5;MB&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;-a&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x5206;&#x533A;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`df -h -m -a`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">du -h -a -s /home</span>
+           
+            <span class="terminullComment"># &#x53EA;&#x663E;&#x793A;&#x5360;&#x6709;&#x7A7A;&#x95F4;&#xFF0C;-h&#x662F;(human-readable)&#x4EE5;&#x6613;&#x8BFB;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#xFF0C;-a&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x5206;&#x533A;&#xFF0C;-s&#x662F;(summarize)&#x7EDF;&#x8BA1;&#x603B;&#x5360;&#x6709;&#x91CF;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`du -h -a -s /home`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">free -g</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x7387;&#xFF0C;-g&#x662F;&#x4EE5;GB&#x4E3A;&#x5355;&#x4F4D;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`free -g`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x89E3;&#x538B;&#x7F29;"><a name="&#x89E3;&#x538B;&#x7F29;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x538B;&#x7F29;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x89E3;&#x538B;&#x7F29;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">tar -zcvf dir1.tar.gz dir/</span>
+           
+            <span class="terminullComment"># -c&#x662F;&#x538B;&#x7F29;&#x6210;tar&#x683C;&#x5F0F;&#xFF0C;-z&#x662F;&#x538B;&#x7F29;&#x6210;gzip&#x683C;&#x5F0F;(&#x4E0D;&#x652F;&#x6301;&#x538B;&#x7F29;&#x76EE;&#x5F55;)&#xFF0C;-v&#x662F;&#x663E;&#x793A;&#x8FC7;&#x7A0B;&#xFF0C;-f&#x662F;&#x6307;&#x5B9A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x540D;(&#x5FC5;&#x987B;&#x6709;&#x4E14;&#x5FC5;&#x987B;&#x653E;&#x6700;&#x540E;)</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`tar -zcvf dir1.tar.gz dir/`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">tar -C /opt -xjf dir1.tar.bz2</span>
+           
+            <span class="terminullComment"># -C&#x662F;&#x89E3;&#x538B;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#xFF0C;-x&#x662F;&#x89E3;&#x538B;tar&#x683C;&#x5F0F;&#xFF0C;-j&#x662F;&#x89E3;&#x538B;bzip2&#x683C;&#x5F0F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`tar -C /opt -xjf dir1.tar.bz2`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">zip -r dir1.zip dir1/</span>
+           
+            <span class="terminullComment"># -r&#x662F;&#x538B;&#x7F29;&#x76EE;&#x5F55;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`zip -r dir1.zip dir1/`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">unzip file1.zip</span>
+           
+            <span class="terminullComment"># &#x89E3;&#x538B;zip&#x683C;&#x5F0F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`unzip file1.zip`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x7CFB;&#x7EDF;"><a name="&#x7CFB;&#x7EDF;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x7CFB;&#x7EDF;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">date</span>
+           
+            <span class="terminullComment"># &#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`date`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">shutdown -c -h 21:30 -r</span>
+           
+            <span class="terminullComment"># &#x5173;&#x673A;&#xFF0C;-c&#x662F;&#x53D6;&#x6D88;&#x4E0A;&#x4E00;&#x4E2A;&#x5173;&#x673A;&#x547D;&#x4EE4;&#xFF0C;-h&#x662F;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#xFF0C;-r&#x662F;&#x91CD;&#x542F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`shutdown -c -h 21:30 -r`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">reboot</span>
+           
+            <span class="terminullComment"># &#x91CD;&#x542F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`reboot`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">uname -r</span>
+           
+            <span class="terminullComment"># &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x4FE1;&#x606F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`uname -r`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x7F51;&#x7EDC;"><a name="&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x7F51;&#x7EDC;</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ping baidu.com</span>
+           
+            <span class="terminullComment"># &#x6D4B;&#x8BD5;&#x7F51;&#x7EDC;&#x8FDE;&#x901A;&#x6027;&#xFF0C;ping&#x4F7F;&#x7528;ICMP&#x534F;&#x8BAE;&#xFF0C;&#x4E0D;&#x5360;&#x7528;&#x7AEF;&#x53E3;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ping baidu.com`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ip addr</span>
+           
+            <span class="terminullComment"># &#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ip addr`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ifconfig -a</span>
+           
+            <span class="terminullComment"># interface configure&#xFF0C;&#x9700;&#x8981;&#x88C5;net-tools&#xFF0C;-a&#x662F;&#x67E5;&#x770B;&#x6240;&#x6709;&#x7F51;&#x5361;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ifconfig -a`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">netstat -antup</span>
+           
+            <span class="terminullComment"># network statistics&#x68C0;&#x6D4B;&#x4E3B;&#x673A;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#xFF0C;-a&#x662F;&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDE;&#x63A5;&#x548C;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;-n&#x662F;&#x4EE5;&#x6570;&#x5B57;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;-t&#x662F;&#x663E;&#x793A;tcp&#x534F;&#x8BAE;&#x76F8;&#x5173;&#xFF0C;-u&#x662F;&#x663E;&#x793A;udp&#x534F;&#x8BAE;&#x76F8;&#x5173;&#xFF0C;-p&#x662F;&#x663E;&#x793A;socket&#x7684;PID&#x548C;&#x8FDB;&#x7A0B;&#x540D;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`netstat -antup`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;"><a name="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. &#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;"><a name="&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9.1. &#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;</h3>
+<ol>
+<li>&#x8FDB;&#x7A0B;&#x662F;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x548C;&#x8C03;&#x5EA6;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;</li>
+<li>&#x7EBF;&#x7A0B;&#x662F;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x6700;&#x5C0F;&#x5355;&#x5143;</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>/</th>
+<th>&#x8FDB;&#x7A0B;</th>
+<th>&#x7EBF;&#x7A0B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;</td>
+<td>&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;</td>
+<td>&#x8F7B;&#x91CF;&#x7EA7;&#x8FDB;&#x7A0B;&#xFF0C;&#x7531;&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;</td>
+</tr>
+<tr>
+<td>&#x5730;&#x5740;&#x7A7A;&#x95F4;</td>
+<td>&#x6709;&#x72EC;&#x7ACB;&#x5730;&#x5740;&#x7A7A;&#x95F4;</td>
+<td>&#x6CA1;&#x72EC;&#x7ACB;&#x5730;&#x5740;&#x7A7A;&#x95F4;</td>
+</tr>
+<tr>
+<td>&#x8D44;&#x6E90;&#x6D88;&#x8017;</td>
+<td></td>
+<td><code>CPU</code>&#x548C;&#x5185;&#x5B58;&#x8017;&#x8D39;&#x5C0F;&#x4E8E;&#x8FDB;&#x7A0B;</td>
+</tr>
+</tbody>
+</table>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">./install.sh &amp;</span>
+           
+            <span class="terminullComment"># &amp;&#x662F;&#x540E;&#x53F0;&#x8FDB;&#x7A0B;&#x6807;&#x8BC6;&#xFF0C;&#x4F46;&#x4EC5;&#x652F;&#x6301;&#x975E;&#x4EA4;&#x4E92;&#x5F0F;&#x547D;&#x4EE4;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`./install.sh &amp;`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ps aux</span>
+           
+            <span class="terminullComment"># &#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;&#xFF0C;a&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#xFF0C;u&#x662F;&#x663E;&#x793A;&#x7528;&#x6237;&#x540D;&#x548C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF0C;x&#x662F;&#x663E;&#x793A;&#x6CA1;&#x6709;&#x7EC8;&#x7AEF;&#x7684;&#x8FDB;&#x7A0B;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ps aux`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">ps -le</span>
+           
+            <span class="terminullComment"># -l&#x662F;&#x957F;&#x683C;&#x5F0F;&#x663E;&#x793A;&#xFF0C;-e&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x8FDB;&#x7A0B;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`ps -le`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">top -d 5</span>
+           
+            <span class="terminullComment"># &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x5065;&#x5EB7;&#x72B6;&#x6001;&#xFF0C;-d&#x662F;&#x5237;&#x65B0;&#x79D2;&#x6570;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`top -d 5`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">kill -9 1024</span>
+           
+            <span class="terminullComment"># &#x5173;&#x95ED;&#x8FDB;&#x7A0B;&#xFF0C;-9&#x662F;&#x5F3A;&#x5236;&#x5173;&#x95ED;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`kill -9 1024`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">kill -1 1024</span>
+           
+            <span class="terminullComment"># -1&#x662F;&#x91CD;&#x542F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`kill -1 1024`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">killall -l</span>
+           
+            <span class="terminullComment"># &#x5173;&#x95ED;&#x6240;&#x6709;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`killall -l`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">w root</span>
+           
+            <span class="terminullComment"># &#x67E5;&#x770B;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`w root`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">nohup ping baidu.com &amp;</span>
+           
+            <span class="terminullComment"># &#x6302;&#x8D77;&#xFF0C;&#x5373;&#x4F7F;&#x7528;&#x6237;&#x9000;&#x51FA;&#x767B;&#x5F55;&#x4F9D;&#x65E7;&#x7EE7;&#x7EED;&#x6267;&#x884C;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`nohup ping baidu.com &amp;`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">uptime</span>
+           
+            <span class="terminullComment"># &#x67E5;&#x770B;&#x8D1F;&#x8F7D;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`uptime`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h2 id="&#x6587;&#x4EF6;&#x6743;&#x9650;"><a name="&#x6587;&#x4EF6;&#x6743;&#x9650;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x6743;&#x9650;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. &#x6587;&#x4EF6;&#x6743;&#x9650;</h2>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x7B2C;1&#x4F4D;&#x662F;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;d&#x662F;&#x76EE;&#x5F55;&#xFF0C;-&#x662F;&#x666E;&#x901A;&#x6587;&#x4EF6;&#xFF0C;l&#x662F;&#x94FE;&#x63A5;&#x6587;&#x4EF6;</span>
+<span class="token comment"># &#x7B2C;2-4&#x4F4D;&#x662F;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x6743;&#x9650;&#xFF0C;&#x7B2C;2-4&#x4F4D;&#x662F;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x7EC4;&#x6743;&#x9650;&#xFF0C;&#x7B2C;2-4&#x4F4D;&#x662F;&#x5176;&#x5B83;&#x7528;&#x6237;&#x6743;&#x9650;</span>
+<span class="token comment"># r&#x662F;(read)&#x8BFB;&#xFF0C;w&#x662F;(write)&#x5199;&#xFF0C;x&#x662F;(execute)&#x6267;&#x884C;</span>
+-rwxr--r-x
+</code></pre>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">chmod -R 777 README.md</span>
+           
+            <span class="terminullComment"># change mode&#x4FEE;&#x6539;&#x6743;&#x9650;&#xFF0C;-R&#x662F;&#x9012;&#x5F52;&#x4FEE;&#x6539;&#xFF0C;r=4&#xFF0C;w=2&#xFF0C;x=1</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`chmod -R 777 README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">chown -R root:root README.md</span>
+           
+            <span class="terminullComment"># change file ownership&#x4FEE;&#x6539;&#x6240;&#x6709;&#x8005;&#xFF0C;-R&#x662F;&#x9012;&#x5F52;&#x4FEE;&#x6539;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`chown -R root:root README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">chgrp root README.md</span>
+           
+            <span class="terminullComment"># change file group ownership&#x4FEE;&#x6539;&#x6240;&#x5C5E;&#x7EC4;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`chgrp root README.md`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<footer class="page-footer"><span class="copyright">&#xA9; Senkita All Right Reserved&#xFF0C;Powered by Senkita</span><span class="footer-modification">&#x672C;&#x9875;&#x9762;&#x6700;&#x65B0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-12-24 04:07:57
+</span></footer>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script src="https://senkita.github.io/gitalk.config.js"></script> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Linux目录.html" class="navigation navigation-prev " aria-label="Previous page: Linux 目录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Linux用户权限.html" class="navigation navigation-next " aria-label="Next page: Linux 用户权限">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Shell 命令","level":"1.2.2","depth":2,"next":{"title":"Linux 用户权限","level":"1.2.3","depth":2,"path":"Linux基础/Linux用户权限.md","ref":"Linux基础/Linux用户权限.md","articles":[]},"previous":{"title":"Linux 目录","level":"1.2.1","depth":2,"path":"Linux基础/Linux目录.md","ref":"Linux基础/Linux目录.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-lunr","-search","search-pro","prism","prism-themes","sharing-plus","expandable-chapters-small","terminull","tbfed-pagefooter","splitter","edit-link","sitemap-general","todo","copy-code-button","klipse","alerts","mermaid-gb3","anchors","anchor-navigation-ex","mathjax-pro","donate","github","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Senkita","modify_label":"本页面最新修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","eval-python","eval-cpp","eval-scheme","eval-php"]},"github":{"url":"https://github.com/Senkita/Senkita.github.io"},"terminull":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b20309f6bcf32f5244e20b90ceb16199"},"todo":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"title":"","button":"打赏","wechat":"https://s3.ax1x.com/2020/12/05/DL8ov9.png","alipay":"","wechatText":"微信捐赠","alipayText":"支付宝打赏"},"sitemap-general":{"prefix":"https://Senkita.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"prism-themes":{},"alerts":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"编辑","base":"https://github.com/Senkita/Senkita.github.io/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Senkita","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"某乱点技能树。"},"file":{"path":"Linux基础/Shell命令.md","mtime":"2020-12-24T04:07:57.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-24T04:08:52.488Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminull/terminull.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

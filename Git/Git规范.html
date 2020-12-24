@@ -1,0 +1,1414 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Git 规范 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Senkita">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminull/terminull.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="持续集成.html" />
+    
+    
+    <link rel="prev" href="GitFlow工作流.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    全栈养成计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Linux基础/">
+            
+                <a href="../Linux基础/">
+            
+                    
+                    Linux 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Linux基础/Linux目录.html">
+            
+                <a href="../Linux基础/Linux目录.html">
+            
+                    
+                    Linux 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Linux基础/Shell命令.html">
+            
+                <a href="../Linux基础/Shell命令.html">
+            
+                    
+                    Shell 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Linux基础/Linux用户权限.html">
+            
+                <a href="../Linux基础/Linux用户权限.html">
+            
+                    
+                    Linux 用户权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Linux基础/Linux常用软件.html">
+            
+                <a href="../Linux基础/Linux常用软件.html">
+            
+                    
+                    Linux 常用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Linux基础/Linux常用配置.html">
+            
+                <a href="../Linux基础/Linux常用配置.html">
+            
+                    
+                    Linux 常用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Git常用命令.html">
+            
+                <a href="Git常用命令.html">
+            
+                    
+                    Git 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Git常用操作.html">
+            
+                <a href="Git常用操作.html">
+            
+                    
+                    Git 常用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="GitFlow工作流.html">
+            
+                <a href="GitFlow工作流.html">
+            
+                    
+                    GitFlow 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="Git规范.html">
+            
+                <a href="Git规范.html">
+            
+                    
+                    Git 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="持续集成.html">
+            
+                <a href="持续集成.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Markdown/">
+            
+                <a href="../Markdown/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Markdown/Markdown基础语法.html">
+            
+                <a href="../Markdown/Markdown基础语法.html">
+            
+                    
+                    Markdown 基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Markdown/Markdown作图.html">
+            
+                <a href="../Markdown/Markdown作图.html">
+            
+                    
+                    Markdown 作图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Markdown/LaTex常用语法.html">
+            
+                <a href="../Markdown/LaTex常用语法.html">
+            
+                    
+                    LaTex 常用语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../前端/">
+            
+                <a href="../前端/">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../前端/HTML5+CSS3/">
+            
+                <a href="../前端/HTML5+CSS3/">
+            
+                    
+                    HTML5+CSS3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../前端/HTML5+CSS3/HTML5基础.html">
+            
+                <a href="../前端/HTML5+CSS3/HTML5基础.html">
+            
+                    
+                    HTML5 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../前端/HTML5+CSS3/CSS3基础.html">
+            
+                <a href="../前端/HTML5+CSS3/CSS3基础.html">
+            
+                    
+                    CSS3 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../前端/HTML5+CSS3/响应式设计.html">
+            
+                <a href="../前端/HTML5+CSS3/响应式设计.html">
+            
+                    
+                    响应式设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../前端/HTML5+CSS3/弹性盒子模型.html">
+            
+                <a href="../前端/HTML5+CSS3/弹性盒子模型.html">
+            
+                    
+                    弹性盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="../前端/HTML5+CSS3/网格布局.html">
+            
+                <a href="../前端/HTML5+CSS3/网格布局.html">
+            
+                    
+                    网格布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="../前端/HTML5+CSS3/多列布局.html">
+            
+                <a href="../前端/HTML5+CSS3/多列布局.html">
+            
+                    
+                    多列布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../前端/JavaScript/">
+            
+                <a href="../前端/JavaScript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../前端/JavaScript/JavaScript基础.html">
+            
+                <a href="../前端/JavaScript/JavaScript基础.html">
+            
+                    
+                    JavaScript 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../前端/JavaScript/ES6.html">
+            
+                <a href="../前端/JavaScript/ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../前端/JavaScript/正则表达式.html">
+            
+                <a href="../前端/JavaScript/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../前端/JavaScript/面向对象编程.html">
+            
+                <a href="../前端/JavaScript/面向对象编程.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../前端/JavaScript/函数式编程.html">
+            
+                <a href="../前端/JavaScript/函数式编程.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../前端/Vue/">
+            
+                <a href="../前端/Vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../前端/Vue/Vue项目结构.html">
+            
+                <a href="../前端/Vue/Vue项目结构.html">
+            
+                    
+                    Vue 项目结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../前端/Vue/setup与ref.html">
+            
+                <a href="../前端/Vue/setup与ref.html">
+            
+                    
+                    setup 与 ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../前端/Vue/reactive与TypeScript类型.html">
+            
+                <a href="../前端/Vue/reactive与TypeScript类型.html">
+            
+                    
+                    reactive 与 TypeScript 类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../前端/Vue/computed、watch与watchEffect.html">
+            
+                <a href="../前端/Vue/computed、watch与watchEffect.html">
+            
+                    
+                    computed、watch 与 watchEffect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Golang/">
+            
+                <a href="../Golang/">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Golang/Golang基础/">
+            
+                <a href="../Golang/Golang基础/">
+            
+                    
+                    Golang 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../Golang/Golang基础/变量、常量、类型与运算符.html">
+            
+                <a href="../Golang/Golang基础/变量、常量、类型与运算符.html">
+            
+                    
+                    变量、常量、类型与运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../Golang/Golang基础/流程控制.html">
+            
+                <a href="../Golang/Golang基础/流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../Golang/Golang基础/函数.html">
+            
+                <a href="../Golang/Golang基础/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../Golang/Golang基础/复合类型.html">
+            
+                <a href="../Golang/Golang基础/复合类型.html">
+            
+                    
+                    复合类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../Golang/Golang基础/面向对象.html">
+            
+                <a href="../Golang/Golang基础/面向对象.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../Golang/Golang基础/类型断言.html">
+            
+                <a href="../Golang/Golang基础/类型断言.html">
+            
+                    
+                    类型断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../Golang/Golang基础/异常处理.html">
+            
+                <a href="../Golang/Golang基础/异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../Golang/Golang基础/文件处理.html">
+            
+                <a href="../Golang/Golang基础/文件处理.html">
+            
+                    
+                    文件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../Golang/Golang基础/反射机制.html">
+            
+                <a href="../Golang/Golang基础/反射机制.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Golang/Golang网络编程/">
+            
+                <a href="../Golang/Golang网络编程/">
+            
+                    
+                    Golang 网络编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../Golang/Golang网络编程/示例代码.html">
+            
+                <a href="../Golang/Golang网络编程/示例代码.html">
+            
+                    
+                    示例代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Golang/Golang专题/">
+            
+                <a href="../Golang/Golang专题/">
+            
+                    
+                    Golang 专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../Golang/Golang专题/开发环境配置与程序实体.html">
+            
+                <a href="../Golang/Golang专题/开发环境配置与程序实体.html">
+            
+                    
+                    开发环境配置与程序实体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../Golang/Golang专题/关于容器.html">
+            
+                <a href="../Golang/Golang专题/关于容器.html">
+            
+                    
+                    关于容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../Golang/Golang专题/通道与go语句.html">
+            
+                <a href="../Golang/Golang专题/通道与go语句.html">
+            
+                    
+                    通道与 go 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="../Golang/Golang专题/关于函数.html">
+            
+                <a href="../Golang/Golang专题/关于函数.html">
+            
+                    
+                    关于函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="../Golang/Golang专题/结构体与接口.html">
+            
+                <a href="../Golang/Golang专题/结构体与接口.html">
+            
+                    
+                    结构体与接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="../Golang/Golang专题/关于指针.html">
+            
+                <a href="../Golang/Golang专题/关于指针.html">
+            
+                    
+                    关于指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="../Golang/Golang专题/关于流程控制.html">
+            
+                <a href="../Golang/Golang专题/关于流程控制.html">
+            
+                    
+                    关于流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.8" data-path="../Golang/Golang专题/关于异常捕获.html">
+            
+                <a href="../Golang/Golang专题/关于异常捕获.html">
+            
+                    
+                    关于异常捕获
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.9" data-path="../Golang/Golang专题/关于测试.html">
+            
+                <a href="../Golang/Golang专题/关于测试.html">
+            
+                    
+                    关于测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.10" data-path="../Golang/Golang专题/互斥锁、读写锁、条件变量与原子操作.html">
+            
+                <a href="../Golang/Golang专题/互斥锁、读写锁、条件变量与原子操作.html">
+            
+                    
+                    互斥锁、读写锁、条件变量与原子操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.11" data-path="../Golang/Golang专题/并发中的其它协程同步工具.html">
+            
+                <a href="../Golang/Golang专题/并发中的其它协程同步工具.html">
+            
+                    
+                    并发中的其它协程同步工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.12" data-path="../Golang/Golang专题/关于IO.html">
+            
+                <a href="../Golang/Golang专题/关于IO.html">
+            
+                    
+                    关于 IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Git 规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#git-&#x89C4;&#x8303;"><b>1. </b>Git &#x89C4;&#x8303;</a></li><ul><li><span class="title-icon "></span><a href="#commit-message"><b>1.1. </b>Commit Message</a></li><ul><li><span class="title-icon "></span><a href="#&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;"><b>1.1.1. </b>&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;</a></li><li><span class="title-icon "></span><a href="#type"><b>1.1.2. </b>type</a></li><li><span class="title-icon "></span><a href="#scope"><b>1.1.3. </b>scope</a></li><li><span class="title-icon "></span><a href="#subject"><b>1.1.4. </b>subject</a></li><li><span class="title-icon "></span><a href="#body"><b>1.1.5. </b>body</a></li><li><span class="title-icon "></span><a href="#footer"><b>1.1.6. </b>Footer</a></li></ul><li><span class="title-icon "></span><a href="#&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x89C4;&#x8303;&#x5DE5;&#x5177;"><b>1.2. </b>&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x89C4;&#x8303;&#x5DE5;&#x5177;</a></li><ul><li><span class="title-icon "></span><a href="#commitizen"><b>1.2.1. </b>commitizen</a></li><li><span class="title-icon "></span><a href="#cz-conventional-changelog"><b>1.2.2. </b>cz-conventional-changelog</a></li><li><span class="title-icon "></span><a href="#commitlint-&#x548C;-husky"><b>1.2.3. </b>commitlint &#x548C; husky</a></li></ul><li><span class="title-icon "></span><a href="#readmemd"><b>1.3. </b>README.md</a></li><li><span class="title-icon "></span><a href="#changelogmd"><b>1.4. </b>ChangeLog.md</a></li></ul></ul></div><a href="#git-&#x89C4;&#x8303;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="git-&#x89C4;&#x8303;"><a name="git-&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#git-&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Git &#x89C4;&#x8303;</h1>
+<h2 id="commit-message"><a name="commit-message" class="anchor-navigation-ex-anchor" href="#commit-message"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Commit Message</h2>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">git commit</span>
+           
+            <span class="terminullComment"># &#x6253;&#x5F00;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`git commit`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h3 id="&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;"><a name="&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;" class="anchor-navigation-ex-anchor" href="#&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6587;&#x6863;</h3>
+<pre class="language-"><code class="lang-markdown"><span class="token title important"><span class="token punctuation">#</span> type(scope): subject &#x7B80;&#x8FF0;</span>
+
+build(packages.json): build the framework
+
+<span class="token title important"><span class="token punctuation">#</span> body &#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;</span>
+
+<span class="token list punctuation">-</span>   Add TypeScript support
+
+<span class="token title important"><span class="token punctuation">#</span> breaking changes</span>
+
+BREAKING CHANGE: Older versions are not support any more
+
+<span class="token title important"><span class="token punctuation">#</span> affect issue</span>
+
+resolves #110, #120, #119
+</code></pre>
+<h3 id="type"><a name="type" class="anchor-navigation-ex-anchor" href="#type"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. type</h3>
+<h4 id="&#x4E3B;&#x8981;&#x7C7B;&#x578B;"><a name="&#x4E3B;&#x8981;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x8981;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E3B;&#x8981;&#x7C7B;&#x578B;" class="plugin-anchor" href="#&#x4E3B;&#x8981;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x8981;&#x7C7B;&#x578B;</h4>
+<ol>
+<li><code>feat</code>&#xFF1A;&#x589E;&#x52A0;&#x65B0;&#x529F;&#x80FD;</li>
+<li><code>fix</code>&#xFF1A;&#x4FEE;&#x590D;<code>bug</code></li>
+</ol>
+<h4 id="&#x7279;&#x6B8A;&#x7C7B;&#x578B;"><a name="&#x7279;&#x6B8A;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x6B8A;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7279;&#x6B8A;&#x7C7B;&#x578B;" class="plugin-anchor" href="#&#x7279;&#x6B8A;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7279;&#x6B8A;&#x7C7B;&#x578B;</h4>
+<ol>
+<li><code>docs</code>&#xFF1A;&#x6587;&#x6863;&#x6539;&#x52A8;</li>
+<li><code>style</code>&#xFF1A;&#x4E0D;&#x6539;&#x53D8;&#x4EE3;&#x7801;&#x542B;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6539;&#x52A8;&#xFF0C;&#x5982;&#x5220;&#x9664;&#x7A7A;&#x683C;&#x7B49;</li>
+<li><code>build</code>&#xFF1A;&#x6784;&#x9020;&#x5DE5;&#x5177;&#x6216;&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x6539;&#x52A8;</li>
+<li><code>refactor</code>&#xFF1A;&#x4EE3;&#x7801;&#x91CD;&#x6784;</li>
+<li><code>revert</code>&#xFF1A;&#x64A4;&#x9500;&#x6539;&#x52A8;</li>
+<li><code>test</code>&#xFF1A;&#x6D4B;&#x8BD5;&#x76F8;&#x5173;&#x6539;&#x52A8;</li>
+<li><code>perf</code>&#xFF1A;&#x6027;&#x80FD;&#x65B9;&#x9762;&#x6539;&#x52A8;</li>
+<li><code>ci</code>&#xFF1A;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x76F8;&#x5173;&#x6539;&#x52A8;</li>
+<li><code>chore</code>&#xFF1A;&#x65E0;&#x5173;&#x7D27;&#x8981;&#x7684;&#x6539;&#x52A8;</li>
+</ol>
+<h3 id="scope"><a name="scope" class="anchor-navigation-ex-anchor" href="#scope"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. scope</h3>
+<p>&#x6307;&#x51FA;&#x6539;&#x52A8;&#x8303;&#x56F4;&#xFF0C;&#x5982;&#x679C;&#x8303;&#x56F4;&#x8DE8;&#x6A21;&#x5757;&#xFF0C;&#x5EFA;&#x8BAE;&#x5206;&#x62C6;&#x63D0;&#x4EA4;&#xFF0C;&#x6709;&#x5229;&#x4E8E;&#x8FFD;&#x8E2A;&#x7EF4;&#x62A4;</p>
+<h3 id="subject"><a name="subject" class="anchor-navigation-ex-anchor" href="#subject"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. subject</h3>
+<p>&#x4EE5;&#x52A8;&#x8BCD;&#x4E00;&#x822C;&#x73B0;&#x5728;&#x65F6;&#x7B2C;&#x4E00;&#x4EBA;&#x79F0;&#x5F00;&#x5934;&#xFF0C;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x4E0D;&#x52A0;&#x53E5;&#x53F7;&#xFF0C;50 &#x5B57;&#x4EE5;&#x5185;</p>
+<h3 id="body"><a name="body" class="anchor-navigation-ex-anchor" href="#body"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. body</h3>
+<p>&#x4EE5;&#x52A8;&#x8BCD;&#x4E00;&#x822C;&#x73B0;&#x5728;&#x65F6;&#x7B2C;&#x4E00;&#x4EBA;&#x79F0;&#x5F00;&#x5934;&#xFF0C;&#x8BF4;&#x660E;&#x52A8;&#x673A;&#x4EE5;&#x53CA;&#x53D8;&#x5316;</p>
+<h3 id="footer"><a name="footer" class="anchor-navigation-ex-anchor" href="#footer"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. Footer</h3>
+<p>&#x53EA;&#x7528;&#x5728;&#x4E0D;&#x517C;&#x5BB9;&#x53D8;&#x52A8;&#x548C;<code>issue</code>&#x5904;&#x7406;&#x4E0A;</p>
+<h4 id="breaking-changes"><a name="breaking-changes" class="anchor-navigation-ex-anchor" href="#breaking-changes"><i class="fa fa-link" aria-hidden="true"></i></a><a name="breaking-changes" class="plugin-anchor" href="#breaking-changes"><i class="fa fa-link" aria-hidden="true"></i></a>breaking changes</h4>
+<p>&#x53D8;&#x52A8;&#x63CF;&#x8FF0;&#xFF0C;&#x8BF4;&#x660E;&#x53D8;&#x52A8;&#x7F18;&#x7531;</p>
+<h4 id="affect-issue"><a name="affect-issue" class="anchor-navigation-ex-anchor" href="#affect-issue"><i class="fa fa-link" aria-hidden="true"></i></a><a name="affect-issue" class="plugin-anchor" href="#affect-issue"><i class="fa fa-link" aria-hidden="true"></i></a>affect issue</h4>
+<ol>
+<li><code>resolves</code>&#xFF1A;&#x89E3;&#x51B3;<code>issue</code>&#x4E2D;&#x7684;&#x95EE;&#x9898;</li>
+<li><code>closes</code>&#xFF1A;&#x5173;&#x95ED;<code>issue</code></li>
+<li><code>fixes</code>&#xFF1A;&#x4FEE;&#x590D;<code>issue</code>&#x4E2D;&#x7684;<code>bug</code></li>
+</ol>
+<h2 id="&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x89C4;&#x8303;&#x5DE5;&#x5177;"><a name="&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x89C4;&#x8303;&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x89C4;&#x8303;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x89C4;&#x8303;&#x5DE5;&#x5177;</h2>
+<h3 id="commitizen"><a name="commitizen" class="anchor-navigation-ex-anchor" href="#commitizen"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. commitizen</h3>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">npm install -g commitizen cz-conventional-changelog</span>
+           
+            <span class="terminullComment"># &#x5B89;&#x88C5;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`npm install -g commitizen cz-conventional-changelog`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">commitizen init cz-conventional-changelog --save --save-exact</span>
+           
+            <span class="terminullComment"># &#x4F7F;&#x9879;&#x76EE;&#x652F;&#x6301;Angular&#x7684;Gommit Message&#x89C4;&#x8303;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`commitizen init cz-conventional-changelog --save --save-exact`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">git cz</span>
+           
+            <span class="terminullComment"># &#x66FF;&#x4EE3;git commit</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`git cz`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h4 id="czrc"><a name="czrc" class="anchor-navigation-ex-anchor" href="#czrc"><i class="fa fa-link" aria-hidden="true"></i></a><a name="czrc" class="plugin-anchor" href="#czrc"><i class="fa fa-link" aria-hidden="true"></i></a>~/.czrc</h4>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cz-conventional-changelog&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="cz-conventional-changelog"><a name="cz-conventional-changelog" class="anchor-navigation-ex-anchor" href="#cz-conventional-changelog"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. cz-conventional-changelog</h3>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">npm install -g cz-conventional-changelog</span>
+           
+            <span class="terminullComment"># &#x5B89;&#x88C5;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`npm install -g cz-conventional-changelog`)"></i>
+          <span class="terminullOutput"></span>
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">conventional-changelog -p angular -i CHANGELOG.md -w -r 0</span>
+           
+            <span class="terminullComment"># &#x751F;&#x6210;Change Log&#xFF0C;-p&#x662F;&#x6307;&#x5B9A;&#x89C4;&#x8303;&#xFF0C;-i&#x662F;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;-w&#x662F;&#x8986;&#x5199;&#xFF0C;-r&#x662F;&#x751F;&#x6210;&#x5168;&#x90E8;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`conventional-changelog -p angular -i CHANGELOG.md -w -r 0`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h3 id="commitlint-&#x548C;-husky"><a name="commitlint-&#x548C;-husky" class="anchor-navigation-ex-anchor" href="#commitlint-&#x548C;-husky"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. commitlint &#x548C; husky</h3>
+<p><code>commitlint</code>&#x63D0;&#x4F9B;&#x683C;&#x5F0F;&#x6821;&#x9A8C;&#xFF0C;<code>husky</code>&#x63D0;&#x4F9B;&#x66F4;&#x6613;&#x7528;&#x7684;<code>git hook</code></p>
+<p><div class="terminull">
+    <div class="terminullMenu">
+      <div class="terminullButtons terminullClose"></div>
+      <div class="terminullButtons terminullMinimize"></div>
+      <div class="terminullButtons terminullZoom"></div>
+    </div>
+    <div class="terminullScreen">
+        
+          <span class="terminullDirectory">~/</span>$ 
+          <span class="terminullCommand">npm i -D husky @commitlint/config-conventional @commitlint/cli</span>
+           
+            <span class="terminullComment"># &#x5B89;&#x88C5;</span>
+          
+          <i class="fa fa-clone t-copy terminullCopyBtn" onclick="copyCommandTerminull(`npm i -D husky @commitlint/config-conventional @commitlint/cli`)"></i>
+          <span class="terminullOutput"></span>
+        
+    </div>
+</div></p>
+<h4 id="packagesjson"><a name="packagesjson" class="anchor-navigation-ex-anchor" href="#packagesjson"><i class="fa fa-link" aria-hidden="true"></i></a><a name="packagesjson" class="plugin-anchor" href="#packagesjson"><i class="fa fa-link" aria-hidden="true"></i></a>packages.json</h4>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;commit-msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commitlint -e $GIT_PARAMS&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="commitlintconfigjs"><a name="commitlintconfigjs" class="anchor-navigation-ex-anchor" href="#commitlintconfigjs"><i class="fa fa-link" aria-hidden="true"></i></a><a name="commitlintconfigjs" class="plugin-anchor" href="#commitlintconfigjs"><i class="fa fa-link" aria-hidden="true"></i></a>commitlint.config.js</h4>
+<pre class="language-"><code class="lang-js">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&apos;@commitlint/config-conventional&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="readmemd"><a name="readmemd" class="anchor-navigation-ex-anchor" href="#readmemd"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. README.md</h2>
+<pre class="language-"><code class="lang-markdown"><span class="token title important"><span class="token punctuation">##</span> Introduction</span>
+
+&#x9879;&#x76EE;&#x4ECB;&#x7ECD;
+
+<span class="token title important"><span class="token punctuation">##</span> Features</span>
+
+&#x9879;&#x76EE;&#x7279;&#x6027;
+
+<span class="token title important"><span class="token punctuation">##</span> To Do</span>
+
+&#x9879;&#x76EE; To do
+
+<span class="token title important"><span class="token punctuation">##</span> Installation</span>
+
+&#x9879;&#x76EE;&#x5B89;&#x88C5;&#x6B65;&#x9AA4;
+
+<span class="token title important"><span class="token punctuation">##</span> Usage</span>
+
+&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x8BF4;&#x660E;
+
+<span class="token title important"><span class="token punctuation">##</span> Maintainers</span>
+
+&#x9879;&#x76EE;&#x7EF4;&#x62A4;&#x8005;
+
+<span class="token title important"><span class="token punctuation">##</span> License</span>
+
+&#x9879;&#x76EE;&#x8BB8;&#x53EF;
+
+<span class="token title important"><span class="token punctuation">##</span> References</span>
+
+&#x9879;&#x76EE;&#x5F15;&#x7528;
+</code></pre>
+<h2 id="changelogmd"><a name="changelogmd" class="anchor-navigation-ex-anchor" href="#changelogmd"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. ChangeLog.md</h2>
+<pre class="language-"><code class="lang-markdown"><span class="token title important"><span class="token punctuation">#</span> &#x66F4;&#x65B0;&#x65E5;&#x5FD7;</span>
+
+<span class="token title important"><span class="token punctuation">##</span> [Unreleased]</span>
+
+<span class="token title important"><span class="token punctuation">##</span> [1.0.0] - 2020-02-02</span>
+
+<span class="token title important"><span class="token punctuation">###</span> Added</span>
+
+<span class="token list punctuation">-</span>   &#x65B0;&#x589E;&#x9879; 1
+<span class="token list punctuation">-</span>   &#x65B0;&#x589E;&#x9879; 1
+
+<span class="token title important"><span class="token punctuation">###</span> Changed</span>
+
+<span class="token list punctuation">-</span>   &#x6539;&#x52A8;&#x9879; 1
+<span class="token list punctuation">-</span>   &#x6539;&#x52A8;&#x9879; 2
+
+<span class="token title important"><span class="token punctuation">###</span> Fixed</span>
+
+<span class="token list punctuation">-</span>   &#x4FEE;&#x590D;&#x9879; 1
+<span class="token list punctuation">-</span>   &#x4FEE;&#x590D;&#x9879; 2
+
+<span class="token title important"><span class="token punctuation">###</span> Removed</span>
+
+<span class="token list punctuation">-</span>   &#x79FB;&#x9664;&#x9879; 1
+<span class="token list punctuation">-</span>   &#x79FB;&#x9664;&#x9879; 2
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; Senkita All Right Reserved&#xFF0C;Powered by Senkita</span><span class="footer-modification">&#x672C;&#x9875;&#x9762;&#x6700;&#x65B0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-12-24 04:07:57
+</span></footer>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script src="https://senkita.github.io/gitalk.config.js"></script> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="GitFlow工作流.html" class="navigation navigation-prev " aria-label="Previous page: GitFlow 工作流">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="持续集成.html" class="navigation navigation-next " aria-label="Next page: 持续集成">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Git 规范","level":"1.3.4","depth":2,"next":{"title":"持续集成","level":"1.3.5","depth":2,"path":"Git/持续集成.md","ref":"Git/持续集成.md","articles":[]},"previous":{"title":"GitFlow 工作流","level":"1.3.3","depth":2,"path":"Git/GitFlow工作流.md","ref":"Git/GitFlow工作流.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-lunr","-search","search-pro","prism","prism-themes","sharing-plus","expandable-chapters-small","terminull","tbfed-pagefooter","splitter","edit-link","sitemap-general","todo","copy-code-button","klipse","alerts","mermaid-gb3","anchors","anchor-navigation-ex","mathjax-pro","donate","github","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Senkita","modify_label":"本页面最新修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js","eval-python","eval-cpp","eval-scheme","eval-php"]},"github":{"url":"https://github.com/Senkita/Senkita.github.io"},"terminull":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b20309f6bcf32f5244e20b90ceb16199"},"todo":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"title":"","button":"打赏","wechat":"https://s3.ax1x.com/2020/12/05/DL8ov9.png","alipay":"","wechatText":"微信捐赠","alipayText":"支付宝打赏"},"sitemap-general":{"prefix":"https://Senkita.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"prism-themes":{},"alerts":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"编辑","base":"https://github.com/Senkita/Senkita.github.io/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Senkita","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"某乱点技能树。"},"file":{"path":"Git/Git规范.md","mtime":"2020-12-24T04:07:57.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-24T04:08:52.488Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminull/terminull.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
